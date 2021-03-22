@@ -1,0 +1,20 @@
+{
+  "name": "cyriltrichereau_3_09022021",
+  "version": "1.0.0",
+  "description": "Projet 3 Openclassrooms - Formation Développeur Web - Dynamisez une page web avec des animations CSS",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./style.css",
+    "prefix": "postcss ./style.css --use autoprefixer -d ./prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BobdAuckland/CyrilTrichereau_3_09022021.git"
+  },
+  "author": "Cyril Trichereau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BobdAuckland/CyrilTrichereau_3_09022021/issues"
+  },
+  "homepage": "https://github.com/BobdAuckland/CyrilTrichereau_3_09022021#readme"
+}

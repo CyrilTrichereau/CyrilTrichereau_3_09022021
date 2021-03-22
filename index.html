@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--  CSS sheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome Icones -->
+    <script
+      src="https://kit.fontawesome.com/e5957e3859.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--  Fonts Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Title and description -->
+    <title>Reservia</title>
+    <meta
+      name="Reservia accueil"
+      content="Reservia, page d'accueil du site de réservement d'hébergements en ligne."
+    />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="Reservia accueil" />
+    <meta name="twitter:site" content="@Reservia" />
+    <meta name="twitter:title" content="Reservia" />
+    <meta
+      name="twitter:description"
+      content="Reservia, page d'accueil du site de réservement d'hébergements en ligne."
+    />
+    <meta name="twitter:creator" content="@TrichereauCyril" />
+
+    <!-- Twitter Summary card images must be at least 200x200px -->
+    <meta name="twitter:image" content="hicone/logoReservia.svg" />
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Reservia" />
+    <meta property="og:type" content="Site Internet Officiel" />
+    <meta property="og:url" content="http://www.reservia.com/" />
+    <meta
+      property="og:image"
+      content="http://reservia.com/icone/logoReservia.svg.jpg"
+    />
+    <meta
+      property="og:description"
+      content="Reservia, page d'accueil du site de réservement d'hébergements en ligne."
+    />
+    <meta property="og:site_name" content="Reservia.com" />
+    <meta
+      property="fb:admins"
+      content="https://www.facebook.com/michel.durand.12/"
+    />
+  </head>
+
+  <!----------------     BODY     ---------------->
+
+  <body>
+    <!-- HEADER -->
+
+    <header>
+      <div class="logoHeader">
+        <p>ohmyfood</p>
+      </div>
+
+      <div class="location">
+        <span
+          class="fas fa-map-marker-alt"
+          class="buttonHere"
+          title="Localisez moi"
+        >
+        </span>
+        <p>Paris, Belleville</p>
+      </div>
+
+      <div class="description">
+        <h1>Réservez le menu qui vous convient</h1>
+        <p>Découvrez des restaurants d'exeption, sélectionnés par nos soins.</p>
+        <button class="buttonDescription">
+          <p>Explorer nos restaurants</p>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- SECTION OPERATION -->
+
+      <section class="sectionOperation">
+        <h2>Fonctionnement</h2>
+        <ol class="operationList">
+          <li class="operationListItem">
+            <span class="fas fa-mobile-alt operationListIcon"> </span>
+            <p>Choisissez un restaurant</p>
+          </li>
+          <li class="operationListItem">
+            <span class="fas fa-list-ul operationListIcon"> </span>
+            <p>Composez votre menu</p>
+          </li>
+          <li class="operationListItem">
+            <span class="fas fa-store operationListIcon"> </span>
+            <p>Dégustez au restaurant</p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- SECTION RESTAURANTS -->
+
+      <section class="sectionRestaurants">
+        <h2>Restaurants</h2>
+
+        <!-- RESTAURANT BLOCK : "La palette du goût" -->
+        <a href="./restaurants/LaPaletteDuGout.html" class="blockRestaurants">
+          <img
+            class="blockRestaurantsPicture"
+            src="./image/paletteSizeS.jpg"
+            alt="La palette du goût"
+            title="La palette du goût"
+          />
+          <div class="blockRestaurantsFooter">
+            <div class="blockRestaurantsFooterText">
+              <h3>La palette du goût</h3>
+              <p>Ménilmontant</p>
+            </div>
+            <span class="far fa-heart"></span>
+          </div>
+        </a>
+
+        <!-- RESTAURANT BLOCK : "La note enchantée" -->
+        <a href="./restaurants/LaNoteEnchantee.html" class="blockRestaurants">
+          <img
+            class="blockRestaurantsPicture"
+            src="./image/noteSizeS.jpg"
+            alt="La note enchantée"
+            title="La note enchantée"
+          />
+          <div class="blockRestaurantsFooter">
+            <div class="blockRestaurantsFooterText">
+              <h3>La note enchantée</h3>
+              <p>Charonne</p>
+            </div>
+            <span class="far fa-heart"></span>
+          </div>
+        </a>
+
+        <!-- RESTAURANT BLOCK : "À la française" -->
+        <a href="./restaurants/ALaFrancaise.html" class="blockRestaurants">
+          <img
+            class="blockRestaurantsPicture"
+            src="./image/francaiseSizeS.jpg"
+            alt="À la française"
+            title="À la française"
+          />
+          <div class="blockRestaurantsFooter">
+            <div class="blockRestaurantsFooterText">
+              <h3>À la française</h3>
+              <p>Cité Rouge</p>
+            </div>
+            <span class="far fa-heart"></span>
+          </div>
+        </a>
+
+        <!-- RESTAURANT BLOCK : "Le délice des sens" -->
+        <a href="./restaurants/LeDeliceDesSens.html" class="blockRestaurants">
+          <img
+            class="blockRestaurantsPicture"
+            src="./image/deliceSizeS.jpg"
+            alt="Le délice des sens"
+            title="Le délice des sens"
+          />
+          <div class="blockRestaurantsFooter">
+            <div class="blockRestaurantsFooterText">
+              <h3>Le délice des sens</h3>
+              <p>Folie-Méricourt</p>
+            </div>
+            <span class="far fa-heart"></span>
+          </div>
+        </a>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <div class="logoFooter">
+        <p>ohmyfood</p>
+        <div class="contactBox">
+          <a href="" class="contactBoxLine">
+            <span class="fas fa-utensils"></span>
+            <p>Proposer un restaurant</p>
+          </a>
+          <a href="" class="contactBoxLine">
+            <span class="fas fa-hands-helping"></span>
+            <p>Devenir partenaire</p>
+          </a>
+          <a href="">Mentions légales</a>
+          <a href="mailto:contact@ohmyfood.fr">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.logoHeader p {
+  font-family: "Shrikhand", cursive;
+  font-size: 3rem;
+}
+
+h1 h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=style.css.map */
