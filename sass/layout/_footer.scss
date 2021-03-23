@@ -1,0 +1,28 @@
+footer {
+    @include widthMax;
+    @include flexColumn;
+    @include flexStartCenter;
+    padding: 1rem 0 2rem 0;
+    background-color: lighten($colorBlack, 20.75);
+}
+
+.logoFooter {
+    width: $widthMobile;
+}
+
+.contactBox {
+    width: $widthMobile;
+    @include flexColumn;
+    @include flexStartStart;
+    gap: 0.7rem;
+    &Line {
+        @include widthMax;
+        @include flexRow;
+        @include flexStartCenter;
+    & span {
+        color: $colorWhite;
+        font-size: 0.7rem;
+        width: 1.5rem;
+    }
+    }
+}

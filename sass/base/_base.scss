@@ -9,8 +9,15 @@
 html {
     // 10px div by def of 16px
     font-size: 62.5%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 body {
     box-sizing: border-box;
+    width: 100%;
+    min-height: 100%;
 }

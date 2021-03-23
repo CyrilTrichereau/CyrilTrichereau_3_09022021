@@ -1,15 +1,63 @@
+html, body {
+    @include roboto;
+    font-size: 1.1rem;
+}
+
+
 
 .logoHeader p {
-    font-family: 'Shrikhand', cursive;
-    font-size: 3rem;
+    @include logoHeader;
 }
 
-h1 h2 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+h1{
+    @include robotoExtraBold;
+    font-size: 1.5rem;
+    margin: 2rem 2rem 1rem 2rem;
 }
 
-p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+h2 { 
+    @include robotoBold;  
+    font-size: 1.5rem;
+    margin: 3rem 0 2rem 0;
+    @include widthMax;
 }
+
+h3 {
+    @include robotoBold;
+}
+
+
+p, a {
+    @include roboto;
+    font-size: 1.1rem;
+}
+
+.blockRestaurantsNew p {
+    @include robotoBold;  
+    font-size: 0.8rem;
+    color: darken($colorTertiary, 38);
+}
+
+.operationListItemPositionNumber {
+    @include robotoBold;
+    font-size: 0.8rem;
+    color: $colorWhite;
+}
+
+.operationListItemText {
+    @include robotoBold;
+    font-size: 1rem;
+}
+
+.logoFooter > p {
+    @include logoFooter;
+    margin: 1rem 0;
+}
+
+.contactBoxText {
+    @include roboto;
+    font-size: 0.9rem;
+    color: $colorWhite;
+}
+
+

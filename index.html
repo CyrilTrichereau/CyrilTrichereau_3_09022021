@@ -15,11 +15,8 @@
     ></script>
 
     <!--  Fonts Google -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Shrikhand&display=swap" rel="stylesheet">
 
     <!-- Title and description -->
     <title>Reservia</title>
@@ -83,7 +80,7 @@
       <div class="description">
         <h1>Réservez le menu qui vous convient</h1>
         <p>Découvrez des restaurants d'exeption, sélectionnés par nos soins.</p>
-        <button class="buttonDescription">
+        <button class="buttonAction">
           <p>Explorer nos restaurants</p>
         </button>
       </div>
@@ -96,16 +93,25 @@
         <h2>Fonctionnement</h2>
         <ol class="operationList">
           <li class="operationListItem">
+            <div class="operationListItemPosition">
+              <p class="operationListItemPositionNumber">1</p>
+            </div>
             <span class="fas fa-mobile-alt operationListIcon"> </span>
-            <p>Choisissez un restaurant</p>
+            <p class="operationListItemText">Choisissez un restaurant</p>
           </li>
           <li class="operationListItem">
+            <div class="operationListItemPosition">
+              <p class="operationListItemPositionNumber">2</p>
+            </div>
             <span class="fas fa-list-ul operationListIcon"> </span>
-            <p>Composez votre menu</p>
+            <p class="operationListItemText">Composez votre menu</p>
           </li>
           <li class="operationListItem">
+            <div class="operationListItemPosition">
+              <p class="operationListItemPositionNumber">3</p>
+            </div>
             <span class="fas fa-store operationListIcon"> </span>
-            <p>Dégustez au restaurant</p>
+            <p class="operationListItemText">Dégustez au restaurant</p>
           </li>
         </ol>
       </section>
@@ -114,74 +120,89 @@
 
       <section class="sectionRestaurants">
         <h2>Restaurants</h2>
-
-        <!-- RESTAURANT BLOCK : "La palette du goût" -->
-        <a href="./restaurants/LaPaletteDuGout.html" class="blockRestaurants">
-          <img
-            class="blockRestaurantsPicture"
-            src="./image/paletteSizeS.jpg"
-            alt="La palette du goût"
-            title="La palette du goût"
-          />
-          <div class="blockRestaurantsFooter">
-            <div class="blockRestaurantsFooterText">
-              <h3>La palette du goût</h3>
-              <p>Ménilmontant</p>
+        <div class="sectionRestaurantsBlocks">
+          <!-- RESTAURANT BLOCK : "La palette du goût" -->
+          <a href="./restaurants/LaPaletteDuGout.html" class="blockRestaurants">
+            <div class="blockRestaurantsNew">
+              <p>Nouveau</p>
             </div>
-            <span class="far fa-heart"></span>
-          </div>
-        </a>
-
-        <!-- RESTAURANT BLOCK : "La note enchantée" -->
-        <a href="./restaurants/LaNoteEnchantee.html" class="blockRestaurants">
-          <img
-            class="blockRestaurantsPicture"
-            src="./image/noteSizeS.jpg"
-            alt="La note enchantée"
-            title="La note enchantée"
-          />
-          <div class="blockRestaurantsFooter">
-            <div class="blockRestaurantsFooterText">
-              <h3>La note enchantée</h3>
-              <p>Charonne</p>
+            <img
+              class="blockRestaurantsPicture"
+              src="./image/paletteSizeS.jpg"
+              alt="La palette du goût"
+              title="La palette du goût"
+            />
+            <div class="blockRestaurantsFooter">
+              <div class="blockRestaurantsFooterText">
+                <h3>La palette du goût</h3>
+                <p>Ménilmontant</p>
+              </div>
+              <div class="blockRestaurantsFooterLogo">
+                <span class="far fa-heart"></span>
+              </div>
             </div>
-            <span class="far fa-heart"></span>
-          </div>
-        </a>
+          </a>
 
-        <!-- RESTAURANT BLOCK : "À la française" -->
-        <a href="./restaurants/ALaFrancaise.html" class="blockRestaurants">
-          <img
-            class="blockRestaurantsPicture"
-            src="./image/francaiseSizeS.jpg"
-            alt="À la française"
-            title="À la française"
-          />
-          <div class="blockRestaurantsFooter">
-            <div class="blockRestaurantsFooterText">
-              <h3>À la française</h3>
-              <p>Cité Rouge</p>
+          <!-- RESTAURANT BLOCK : "La note enchantée" -->
+          <a href="./restaurants/LaNoteEnchantee.html" class="blockRestaurants">
+            <div class="blockRestaurantsNew">
+              <p>Nouveau</p>
             </div>
-            <span class="far fa-heart"></span>
-          </div>
-        </a>
+            <img
+              class="blockRestaurantsPicture"
+              src="./image/noteSizeS.jpg"
+              alt="La note enchantée"
+              title="La note enchantée"
+            />
+            <div class="blockRestaurantsFooter">
+              <div class="blockRestaurantsFooterText">
+                <h3>La note enchantée</h3>
+                <p>Charonne</p>
+              </div>
+              <div class="blockRestaurantsFooterLogo">
+                <span class="far fa-heart"></span>
+              </div>
+            </div>
+          </a>
 
-        <!-- RESTAURANT BLOCK : "Le délice des sens" -->
-        <a href="./restaurants/LeDeliceDesSens.html" class="blockRestaurants">
-          <img
-            class="blockRestaurantsPicture"
-            src="./image/deliceSizeS.jpg"
-            alt="Le délice des sens"
-            title="Le délice des sens"
-          />
-          <div class="blockRestaurantsFooter">
-            <div class="blockRestaurantsFooterText">
-              <h3>Le délice des sens</h3>
-              <p>Folie-Méricourt</p>
+          <!-- RESTAURANT BLOCK : "À la française" -->
+          <a href="./restaurants/ALaFrancaise.html" class="blockRestaurants">
+            <img
+              class="blockRestaurantsPicture"
+              src="./image/francaiseSizeS.jpg"
+              alt="À la française"
+              title="À la française"
+            />
+            <div class="blockRestaurantsFooter">
+              <div class="blockRestaurantsFooterText">
+                <h3>À la française</h3>
+                <p>Cité Rouge</p>
+              </div>
+              <div class="blockRestaurantsFooterLogo">
+                <span class="far fa-heart"></span>
+              </div>
             </div>
-            <span class="far fa-heart"></span>
-          </div>
-        </a>
+          </a>
+
+          <!-- RESTAURANT BLOCK : "Le délice des sens" -->
+          <a href="./restaurants/LeDeliceDesSens.html" class="blockRestaurants">
+            <img
+              class="blockRestaurantsPicture"
+              src="./image/deliceSizeS.jpg"
+              alt="Le délice des sens"
+              title="Le délice des sens"
+            />
+            <div class="blockRestaurantsFooter">
+              <div class="blockRestaurantsFooterText">
+                <h3>Le délice des sens</h3>
+                <p>Folie-Méricourt</p>
+              </div>
+              <div class="blockRestaurantsFooterLogo">
+                <span class="far fa-heart"></span>
+              </div>
+            </div>
+          </a>
+        </div>
       </section>
     </main>
 
@@ -190,18 +211,22 @@
     <footer>
       <div class="logoFooter">
         <p>ohmyfood</p>
-        <div class="contactBox">
-          <a href="" class="contactBoxLine">
-            <span class="fas fa-utensils"></span>
-            <p>Proposer un restaurant</p>
-          </a>
-          <a href="" class="contactBoxLine">
-            <span class="fas fa-hands-helping"></span>
-            <p>Devenir partenaire</p>
-          </a>
-          <a href="">Mentions légales</a>
-          <a href="mailto:contact@ohmyfood.fr">Contact</a>
-        </div>
+      </div>
+      <div class="contactBox">
+        <a href="" class="contactBoxLine">
+          <span class="fas fa-utensils"></span>
+          <p class="contactBoxText">Proposer un restaurant</p>
+        </a>
+        <a href="" class="contactBoxLine">
+          <span class="fas fa-hands-helping"></span>
+          <p class="contactBoxText">Devenir partenaire</p>
+        </a>
+        <a href="">
+          <p class="contactBoxText">Mentions légales</p>
+        </a>
+        <a href="mailto:contact@ohmyfood.fr">
+          <p class="contactBoxText">Contact</p>
+        </a>
       </div>
     </footer>
   </body>

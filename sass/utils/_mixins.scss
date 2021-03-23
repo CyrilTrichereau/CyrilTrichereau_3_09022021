@@ -1,0 +1,101 @@
+
+// MIXINS TEXT
+
+@mixin roboto {
+    font-family: $roboto;
+    font-weight: 400;
+    color: $colorBlack;
+    text-decoration: none;
+}
+
+@mixin robotoBold {
+    font-family: $roboto;
+    font-weight: 700;
+    color: $colorBlack;
+    text-decoration: none;
+}
+
+@mixin robotoExtraBold {
+    font-family: $roboto;
+    font-weight: 900;
+    color: $colorBlack;
+    text-decoration: none;
+}
+
+@mixin logoHeader {
+    font-family: $shrikhand;
+    font-weight: 400;
+    color: $colorBlack;
+    text-decoration: none;
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+@mixin logoFooter {
+    font-family: $shrikhand;
+    font-weight: 400;
+    color: $colorWhite;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+
+// COLOR
+
+@mixin boxShadow {
+    box-shadow: 0px 0px 8px 0px lighten($colorBlack, 80);
+}
+@mixin boxShadowStrong {
+    box-shadow: 0px 0px 5px 5px lighten($colorBlack, 80);
+}
+@mixin boxRadius {
+    border-radius: 25px;
+}
+
+@mixin boxShadowRadius {
+    @include boxShadow;
+    @include boxRadius;
+}
+
+
+
+
+// LAYOUT
+@mixin widthMax {
+    width: 100%;
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flexCenterCenter {
+    justify-content: center;
+    align-items: center;    
+}
+
+@mixin flexStartCenter {
+    justify-content: flex-start;
+    align-items: center;    
+}
+
+@mixin flexCenterStart {
+    justify-content: center;
+    align-items: flex-start;    
+}
+
+@mixin flexStartStart {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@mixin gapBox {
+    gap: 1.5rem;
+}

@@ -1,0 +1,42 @@
+header {
+    @include widthMax;
+    @include flexColumn;
+    @include flexStartCenter;
+}
+
+.logoHeader {
+    @include widthMax;
+    padding: 2rem 0 1rem 0;
+    @include boxShadowStrong;
+    z-index: 10;
+}
+
+.location {
+    @include widthMax;
+    @include flexRow;
+    @include flexCenterCenter;
+    padding: 1rem 0;
+    background-color: lighten($colorBlack, 91.7)
+}
+
+.fa-map-marker-alt {
+    width: 4%;   
+    margin: 0 0.5rem 0 0;
+    font-size: 1.20rem;
+}
+
+.description {
+    @include widthMax;
+    padding: 1rem;
+    text-align: center;
+    background-color: lighten($colorBlack, 96.5);
+}
+
+
+
+
+
+
+
+
+

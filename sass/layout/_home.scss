@@ -1,0 +1,133 @@
+main {
+    @include widthMax;
+    height: auto;
+    @include flexColumn;
+    @include flexStartCenter;
+}
+
+
+
+    .sectionOperation {
+        width: $widthMobile;
+        height: auto;
+        @include flexColumn;
+        @include flexStartStart;
+    }
+
+        .operationList {
+            @include widthMax;
+            margin: 0 0 3rem 0;
+            @include flexColumn;
+            @include flexStartStart;
+            @include gapBox;  
+        }
+
+            .operationListItem {
+                @include widthMax;
+                @include flexRow;
+                @include flexStartCenter;
+                background-color: lighten($colorBlack, 96.5);
+                @include boxShadowRadius;
+                padding: 1.5rem;
+                & span {
+                    font-size: 1.3rem;
+                    color: lighten($colorBlack, 49.5);
+                    margin: 0 1rem 0 0;
+                }
+                &:nth-child(3) {
+                    background: lighten($colorPrimary, 36.2);
+                    & span {
+                        color: $colorPrimary;           
+                    }
+                }
+                &Position {
+                    @include flexColumn;
+                    @include flexCenterCenter;
+                    position: absolute;
+                    left: 1.8%;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    background-color: $colorPrimary;
+                    @include boxRadius;
+                }
+            }
+
+
+    .sectionRestaurants {
+        @include widthMax;
+        height: auto;
+        @include flexColumn;
+        @include flexStartCenter;
+        padding: 0 0 5rem 0;
+        background-color: lighten($colorBlack, 96.5);
+        & h2 {   
+            width: $widthMobile;
+        }
+    }
+        .sectionRestaurantsBlocks {
+            width: $widthMobile;
+            height: 90%;
+            @include flexColumn;
+            @include flexStartCenter;
+            @include gapBox;
+        }
+
+            .blockRestaurants {
+                @include widthMax;
+                height: 15rem;
+                @include flexColumn;
+                @include flexCenterCenter;
+                overflow: hidden;
+                @include boxShadowRadius;
+                position: relative;
+
+                &New {
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    padding: 0.5rem 0.8rem;
+                    background-color: $colorTertiary;
+                    border-radius: 2px
+                }
+
+                &Picture{
+                    @include widthMax;
+                    height: 72%;
+                    object-fit: cover;
+                    object-position: 50% 60%;
+                }
+                &Footer {
+                    @include widthMax;
+                    height: 30%;
+                    @include flexRow;
+                    @include flexStartCenter;
+                    gap: 1rem;
+                    &Text {
+                        width: 80.6%;
+                        height: 100%;
+                        @include flexColumn;
+                        @include flexCenterStart;
+                        gap: 0.5rem;
+                        margin: 0 0 0 1rem;
+                        & p {
+                            color: $colorBlack;
+                        }
+                    }
+                    &Logo {
+                        width: 19.4%;
+                        height: 100%;
+                        @include flexRow;
+                        @include flexCenterCenter;
+                        font-size: 1.7rem;;
+                    }
+                }
+            }
+
+
+
+
+
+
+
+
+
