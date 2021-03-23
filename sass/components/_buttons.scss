@@ -1,7 +1,18 @@
 .buttonAction {
-    background-color: $colorPrimary;
+    background: linear-gradient(to top left, $colorPrimary, $colorSecondary);
     margin: 2rem 0;
     padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    & p { 
+    color: $colorWhite;
+    }
+}
+
+.buttonOrder {
+    background: linear-gradient(to top left, $colorPrimary, $colorSecondary);
+    margin: 2rem 0;
+    padding: 1rem 3.5rem;
     border: none;
     border-radius: 50px;
     & p { 

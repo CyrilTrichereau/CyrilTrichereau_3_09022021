@@ -395,7 +395,7 @@ html, body {
   font-size: 1.1rem;
 }
 
-.logoHeader p {
+.logoHeader p, .headerRestaurantsPage p {
   font-family: "Shrikhand", cursive, "Arial Black", Arial, Verdana;
   font-weight: 400;
   color: #000000;
@@ -428,6 +428,9 @@ h3 {
   font-weight: 700;
   color: #000000;
   text-decoration: none;
+  font-size: 0.9rem;
+  margin: 0 0 0.5rem 0;
+  white-space: nowrap;
 }
 
 p, a {
@@ -481,6 +484,36 @@ p, a {
   text-decoration: none;
   font-size: 0.9rem;
   color: #ffffff;
+}
+
+.titleMenu h1 {
+  width: 89.33%;
+  font-family: "Shrikhand", cursive, "Arial Black", Arial, Verdana;
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.dishes h2 {
+  font-family: "Roboto", sans-serif, "Arial Black", Arial, Verdana;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+.dishes p {
+  font-family: "Roboto", sans-serif, "Arial Black", Arial, Verdana;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+.dishes em {
+  font-family: "Roboto", sans-serif, "Arial Black", Arial, Verdana;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+  font-size: 0.8rem;
 }
 
 footer {
@@ -556,9 +589,26 @@ header {
   background-color: #f6f6f6;
 }
 
+.headerRestaurantsPage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem 0 1rem 0;
+  position: relative;
+}
+
+.fa-arrow-left {
+  position: absolute;
+  left: 5%;
+  top: 45%;
+  font-size: 1.5rem;
+}
+
 main {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -567,7 +617,7 @@ main {
 
 .sectionOperation {
   width: 89.33%;
-  height: auto;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -621,7 +671,7 @@ main {
 
 .sectionRestaurants {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -701,14 +751,142 @@ main {
   font-size: 1.7rem;
 }
 
+.restaurantImage {
+  width: 100%;
+  max-height: 250px;
+  margin: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.sectionMenu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  top: -3rem;
+  padding: 2rem 0 3rem 0;
+  margin: 0 0 -3rem 0;
+  border-radius: 35px 35px 0 0;
+  background-color: #f6f6f6;
+}
+
+.titleMenu {
+  width: 89.33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0 2rem 0;
+}
+.titleMenu span {
+  font-size: 1.6rem;
+}
+
+.dishes {
+  width: 89.33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.dishes h2 {
+  position: relative;
+  right: 43%;
+  width: 15%;
+  border-bottom: 3px solid #99E2D0;
+  margin: 0 0 0 0.5rem;
+  padding: 0 0 0.3rem 0;
+}
+
+.dishBox {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+.dishBoxContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+}
+.dishBoxContentTitle {
+  width: 100%;
+}
+.dishBoxContentText {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.dishBoxContentText p {
+  width: 79.5%;
+  height: 100%;
+}
+.dishBoxContentText em {
+  width: 20.5%;
+  height: 100%;
+  text-align: center;
+}
+.dishBoxCross {
+  width: 3.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+}
+.dishBoxCrossBackground {
+  width: 1.2rem;
+  height: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 25px;
+}
+.dishBoxCrossBackground span {
+  color: #99E2D0;
+  font-size: 0.8rem;
+}
+
 .buttonAction {
-  background-color: #9356DC;
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
   margin: 2rem 0;
   padding: 1rem 1.5rem;
   border: none;
   border-radius: 50px;
 }
 .buttonAction p {
+  color: #ffffff;
+}
+
+.buttonOrder {
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  margin: 2rem 0;
+  padding: 1rem 3.5rem;
+  border: none;
+  border-radius: 50px;
+}
+.buttonOrder p {
   color: #ffffff;
 }
 

@@ -1,6 +1,6 @@
 main {
     @include widthMax;
-    height: auto;
+    @include heightMax;
     @include flexColumn;
     @include flexStartCenter;
 }
@@ -9,7 +9,7 @@ main {
 
     .sectionOperation {
         width: $widthMobile;
-        height: auto;
+        @include heightMax;
         @include flexColumn;
         @include flexStartStart;
     }
@@ -19,7 +19,7 @@ main {
             margin: 0 0 3rem 0;
             @include flexColumn;
             @include flexStartStart;
-            @include gapBox;  
+            @include gapBoxLarge;  
         }
 
             .operationListItem {
@@ -55,7 +55,7 @@ main {
 
     .sectionRestaurants {
         @include widthMax;
-        height: auto;
+        @include heightMax;
         @include flexColumn;
         @include flexStartCenter;
         padding: 0 0 5rem 0;
@@ -69,7 +69,7 @@ main {
             height: 90%;
             @include flexColumn;
             @include flexStartCenter;
-            @include gapBox;
+            @include gapBoxLarge;
         }
 
             .blockRestaurants {
@@ -101,13 +101,13 @@ main {
                     height: 30%;
                     @include flexRow;
                     @include flexStartCenter;
-                    gap: 1rem;
+                    @include gapBoxMedium;
                     &Text {
                         width: 80.6%;
-                        height: 100%;
+                        @include heightMax;
                         @include flexColumn;
                         @include flexCenterStart;
-                        gap: 0.5rem;
+                        @include gapBoxSmall;
                         margin: 0 0 0 1rem;
                         & p {
                             color: $colorBlack;
@@ -115,7 +115,7 @@ main {
                     }
                     &Logo {
                         width: 19.4%;
-                        height: 100%;
+                        @include heightMax;
                         @include flexRow;
                         @include flexCenterCenter;
                         font-size: 1.7rem;;

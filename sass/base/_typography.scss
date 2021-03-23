@@ -3,9 +3,7 @@ html, body {
     font-size: 1.1rem;
 }
 
-
-
-.logoHeader p {
+.logoHeader p, .headerRestaurantsPage p  {
     @include logoHeader;
 }
 
@@ -23,7 +21,10 @@ h2 {
 }
 
 h3 {
-    @include robotoBold;
+    @include robotoBold;  
+    font-size: 0.9rem;
+    margin: 0 0 0.5rem 0;
+    white-space: nowrap;
 }
 
 
@@ -31,6 +32,8 @@ p, a {
     @include roboto;
     font-size: 1.1rem;
 }
+
+// HOME PAGES
 
 .blockRestaurantsNew p {
     @include robotoBold;  
@@ -59,5 +62,36 @@ p, a {
     font-size: 0.9rem;
     color: $colorWhite;
 }
+
+// MENU PAGES
+
+.titleMenu h1 {
+    width: $widthMobile;
+    font-family: $shrikhand;
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.dishes {
+    & h2 {
+    @include roboto;
+    font-size: 1.1rem; 
+    text-transform: uppercase;    
+    }
+    & p {
+        @include roboto;
+        font-size: 0.8rem;
+    }
+    & em { 
+        @include robotoBold;
+        font-size: 0.8rem;
+    }
+}    
+
+
+
+
+
+
 
 

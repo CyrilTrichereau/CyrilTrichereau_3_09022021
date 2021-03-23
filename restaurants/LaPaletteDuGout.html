@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--  CSS sheet -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
 
     <!-- Font Awesome Icones -->
     <script
@@ -65,14 +65,19 @@
   <body>
     <!-- HEADER -->
 
-    <header>
-      <a href="./index.html" class="fas fa-arrow-left"></a>
+    <header class="headerRestaurantsPage">
+      <a href="../index.html" class="fas fa-arrow-left"></a>
       <p>ohmyfood</p>
     </header>
 
     <main>
       <!-- RESTAURANT IMAGE -->
-      <div class="restaurantImage"></div>
+      <img
+              class="restaurantImage"
+              src="../image/paletteSizeS.jpg"
+              alt="La palette du goût"
+              title="La palette du goût"
+            />
 
       <!-- SECTION MENU -->
       <section class="sectionMenu">
@@ -83,7 +88,7 @@
         </div>
 
         <!-- STARTERS -->
-        <div class="starters">
+        <div class="dishes">
           <h2>Entrées</h2>
           <div class="dishBox">
             <div class="dishBoxContent">
@@ -96,8 +101,9 @@
               </div>
             </div>
             <div class="dishBoxCross">
-              <span class="fas fa-check"></span>
-            </div>
+              <div class="dishBoxCrossBackground">
+                <span class="fas fa-check"></span>
+              </div>            </div>
           </div>
 
           <div class="dishBox">
@@ -111,8 +117,9 @@
               </div>
             </div>
             <div class="dishBoxCross">
-              <span class="fas fa-check"></span>
-            </div>
+              <div class="dishBoxCrossBackground">
+                <span class="fas fa-check"></span>
+              </div>            </div>
           </div>
 
           <div class="dishBox">
@@ -126,13 +133,14 @@
               </div>
             </div>
             <div class="dishBoxCross">
-              <span class="fas fa-check"></span>
-            </div>
+              <div class="dishBoxCrossBackground">
+                <span class="fas fa-check"></span>
+              </div>            </div>
           </div>
         </div>
 
         <!-- MAIN DISHES -->
-        <div class="mainDishes">
+        <div class="dishes">
           <h2>Plats</h2>
           <div class="dishBox">
             <div class="dishBoxContent">
@@ -145,8 +153,9 @@
               </div>
             </div>
             <div class="dishBoxCross">
-              <span class="fas fa-check"></span>
-            </div>
+              <div class="dishBoxCrossBackground">
+                <span class="fas fa-check"></span>
+              </div>            </div>
           </div>
 
           <div class="dishBox">
@@ -160,8 +169,9 @@
               </div>
             </div>
             <div class="dishBoxCross">
-              <span class="fas fa-check"></span>
-            </div>
+              <div class="dishBoxCrossBackground">
+                <span class="fas fa-check"></span>
+              </div>            </div>
           </div>
 
           <div class="dishBox">
@@ -175,13 +185,14 @@
               </div>
             </div>
             <div class="dishBoxCross">
-              <span class="fas fa-check"></span>
-            </div>
+              <div class="dishBoxCrossBackground">
+                <span class="fas fa-check"></span>
+              </div>            </div>
           </div>
         </div>
 
         <!-- DESSERTS -->
-        <div class="desserts">
+        <div class="dishes">
           <h2>Desserts</h2>
           <div class="dishBox">
             <div class="dishBoxContent">
@@ -194,8 +205,9 @@
               </div>
             </div>
             <div class="dishBoxCross">
-              <span class="fas fa-check"></span>
-            </div>
+              <div class="dishBoxCrossBackground">
+                <span class="fas fa-check"></span>
+              </div>            </div>
           </div>
 
           <div class="dishBox">
@@ -209,8 +221,9 @@
               </div>
             </div>
             <div class="dishBoxCross">
-              <span class="fas fa-check"></span>
-            </div>
+              <div class="dishBoxCrossBackground">
+                <span class="fas fa-check"></span>
+              </div>            </div>
           </div>
 
           <div class="dishBox">
@@ -224,13 +237,14 @@
               </div>
             </div>
             <div class="dishBoxCross">
-              <span class="fas fa-check"></span>
-            </div>
+              <div class="dishBoxCrossBackground">
+                <span class="fas fa-check"></span>
+              </div>            </div>
           </div>
         </div>
 
         <!-- ORDER -->
-        <button class="order">
+        <button class="buttonOrder">
           <p>Commander</p>
         </button>
       </section>
@@ -241,18 +255,22 @@
     <footer>
       <div class="logoFooter">
         <p>ohmyfood</p>
-        <div class="contactBox">
-          <a href="" class="contactBoxLine">
-            <span class="fas fa-utensils"></span>
-            <p>Proposer un restaurant</p>
-          </a>
-          <a href="" class="contactBoxLine">
-            <span class="fas fa-hands-helping"></span>
-            <p>Devenir partenaire</p>
-          </a>
-          <a href="">Mentions légales</a>
-          <a href="mailto:contact@ohmyfood.fr">Contact</a>
-        </div>
+      </div>
+      <div class="contactBox">
+        <a href="" class="contactBoxLine">
+          <span class="fas fa-utensils"></span>
+          <p class="contactBoxText">Proposer un restaurant</p>
+        </a>
+        <a href="" class="contactBoxLine">
+          <span class="fas fa-hands-helping"></span>
+          <p class="contactBoxText">Devenir partenaire</p>
+        </a>
+        <a href="">
+          <p class="contactBoxText">Mentions légales</p>
+        </a>
+        <a href="mailto:contact@ohmyfood.fr">
+          <p class="contactBoxText">Contact</p>
+        </a>
       </div>
     </footer>
   </body>

@@ -66,6 +66,10 @@
     width: 100%;
 }
 
+@mixin heightMax {
+    height: 100%;
+}
+
 @mixin flexColumn {
     display: flex;
     flex-direction: column;
@@ -96,6 +100,14 @@
     align-items: flex-start;
 }
 
-@mixin gapBox {
+@mixin gapBoxLarge {
     gap: 1.5rem;
+}
+
+@mixin gapBoxMedium {
+    gap: 1rem;
+}
+
+@mixin gapBoxSmall {
+    gap: 0.5rem;
 }
