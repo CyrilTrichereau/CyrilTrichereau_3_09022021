@@ -49,6 +49,9 @@
 @mixin boxShadowStrong {
     box-shadow: 0px 0px 5px 5px lighten($colorBlack, 80);
 }
+@mixin boxShadowVeryStrong {
+    box-shadow: 0px 0px 15px 4px lighten($colorBlack, 60);
+}
 @mixin boxRadius {
     border-radius: 25px;
 }

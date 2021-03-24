@@ -22,15 +22,13 @@ h2 {
 
 h3 {
     @include robotoBold;  
-    font-size: 0.9rem;
-    margin: 0 0 0.5rem 0;
-    white-space: nowrap;
+    font-size: 1rem;
 }
 
 
 p, a {
     @include roboto;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 // HOME PAGES
@@ -57,7 +55,7 @@ p, a {
     margin: 1rem 0;
 }
 
-.contactBoxText {
+.contactBoxText, .buttonAction, .buttonOrder {
     @include roboto;
     font-size: 0.9rem;
     color: $colorWhite;
@@ -77,6 +75,11 @@ p, a {
     @include roboto;
     font-size: 1.1rem; 
     text-transform: uppercase;    
+    }
+    & h3 {
+        @include robotoBold;  
+        font-size: 0.9rem;
+        margin: 0 0 0.5rem 0;
     }
     & p {
         @include roboto;

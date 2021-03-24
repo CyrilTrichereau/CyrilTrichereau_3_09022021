@@ -25,14 +25,15 @@ main {
             .operationListItem {
                 @include widthMax;
                 @include flexRow;
-                @include flexStartCenter;
+                @include flexCenterCenter;
                 background-color: lighten($colorBlack, 96.5);
                 @include boxShadowRadius;
                 padding: 1.5rem;
+                position: relative;
                 & span {
                     font-size: 1.3rem;
                     color: lighten($colorBlack, 49.5);
-                    margin: 0 1rem 0 0;
+                    margin: 0 1.5rem 0 0;
                 }
                 &:nth-child(3) {
                     background: lighten($colorPrimary, 36.2);
@@ -44,7 +45,7 @@ main {
                     @include flexColumn;
                     @include flexCenterCenter;
                     position: absolute;
-                    left: 1.8%;
+                    left: -0.75rem;
                     width: 1.5rem;
                     height: 1.5rem;
                     background-color: $colorPrimary;
@@ -80,6 +81,7 @@ main {
                 overflow: hidden;
                 @include boxShadowRadius;
                 position: relative;
+                background: $colorWhite;
 
                 &New {
                     position: absolute;
@@ -118,7 +120,11 @@ main {
                         @include heightMax;
                         @include flexRow;
                         @include flexCenterCenter;
-                        font-size: 1.7rem;;
+                        font-size: 1.7rem;
+                        position: relative;
+                        overflow: hidden;
+                        background: $colorWhite;
+                        border: none;
                     }
                 }
             }

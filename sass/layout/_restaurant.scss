@@ -24,6 +24,9 @@
         @include flexRow;
         @include flexCenterCenter;
         margin: 1rem 0 2rem 0;
+        & h1 {
+            width: 80%;
+        }
         & span {
             font-size: 1.6rem;
         }

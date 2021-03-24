@@ -1,21 +1,79 @@
+
+// BUTTON ACTION
 .buttonAction {
     background: linear-gradient(to top left, $colorPrimary, $colorSecondary);
     margin: 2rem 0;
     padding: 1rem 1.5rem;
     border: none;
     border-radius: 50px;
+    @include boxShadow;
+    opacity: 1;
     & p { 
     color: $colorWhite;
     }
+    &:hover {
+        @include boxShadowVeryStrong;
+        opacity: 0.95;
+    }
 }
 
+
+// BUTTON ORDER
 .buttonOrder {
     background: linear-gradient(to top left, $colorPrimary, $colorSecondary);
     margin: 2rem 0;
     padding: 1rem 3.5rem;
     border: none;
     border-radius: 50px;
+    @include boxShadow;
+    opacity: 1;
     & p { 
     color: $colorWhite;
+    }
+    &:hover {
+        @include boxShadowVeryStrong;
+        opacity: 0.95;
+    }
+}
+
+
+
+
+// BUTTON FILLING HEART
+// buttonHeartFillBackground 
+
+.buttonHeart {
+    &Empty {
+        z-index: 3;
+        opacity: 1;
+        position: absolute;
+        &:hover {
+            opacity: 0;
+            transition: opacity 400ms;
+
+            & + .buttonHeartFillBackground {
+                animation: fillingHeart 800ms 50ms ease-in-out alternate both;
+            }
+        }
+    }
+
+    &Fill {
+        z-index: 1;
+        position: absolute;
+        background:-moz-linear-gradient($colorPrimary, $colorSecondary); 
+        background: -webkit-linear-gradient($colorPrimary, $colorSecondary); 
+        background: linear-gradient($colorPrimary, $colorSecondary);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color:transparent;
+
+        &Background {
+            z-index: 2;
+            position: absolute;
+            @include widthMax;
+            height: 50%;
+            background-color: $colorWhite;
+        }
     }
 }
