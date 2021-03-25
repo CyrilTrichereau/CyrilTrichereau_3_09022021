@@ -5,6 +5,8 @@ $colorSecondary: #FF79DA ;
 $colorTertiary: #99E2D0 ;
 $colorWhite: #ffffff;
 $colorBlack: #000000;
+$colorPrimaryLight: lighten($colorPrimary, 2%);
+$colorSecondaryLight: lighten($colorSecondary, 2%);
 
 // TEXT
 $roboto: 'Roboto', sans-serif, "Arial Black", Arial, Verdana;

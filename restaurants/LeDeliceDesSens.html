@@ -63,6 +63,12 @@
   <!--    BODY     -->
 
   <body>
+    <!-- LOADING SPINNER -->
+
+    <div class="loadingSpinner">
+      <span class="fas fa-spinner loadingSpinnerLogo"></span>
+    </div>
+
     <!-- HEADER -->
 
     <header class="headerRestaurantsPage">
@@ -73,19 +79,23 @@
     <main>
       <!-- RESTAURANT IMAGE -->
       <img
-              class="restaurantImage"
-              src="../image/deliceSizeS.jpg"
-              alt="Le délice des sens"
-              title="Le délice des sens"
-            />
+        class="restaurantImage"
+        src="../image/deliceSizeS.jpg"
+        alt="Le délice des sens"
+        title="Le délice des sens"
+      />
 
       <!-- SECTION MENU -->
       <section class="sectionMenu">
         <!-- TITLE -->
         <div class="titleMenu">
           <h1>Le délice des sens</h1>
-          <span class="far fa-heart"></span>
-        </div>
+          <button class="buttonHeart titleMenuLogo">
+            <span class="far fa-heart buttonHeartEmpty"> </span>
+            <div class="buttonHeartFillBackground"></div>
+            <span class="fas fa-heart buttonHeartFill"> </span>
+          </button>
+    </div>
 
         <!-- STARTERS -->
         <div class="dishes">
@@ -103,7 +113,8 @@
             <div class="dishBoxCross">
               <div class="dishBoxCrossBackground">
                 <span class="fas fa-check"></span>
-              </div>            </div>
+              </div>
+            </div>
           </div>
 
           <div class="dishBox">
@@ -119,7 +130,8 @@
             <div class="dishBoxCross">
               <div class="dishBoxCrossBackground">
                 <span class="fas fa-check"></span>
-              </div>            </div>
+              </div>
+            </div>
           </div>
 
           <div class="dishBox">
@@ -135,7 +147,8 @@
             <div class="dishBoxCross">
               <div class="dishBoxCrossBackground">
                 <span class="fas fa-check"></span>
-              </div>            </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -155,7 +168,8 @@
             <div class="dishBoxCross">
               <div class="dishBoxCrossBackground">
                 <span class="fas fa-check"></span>
-              </div>            </div>
+              </div>
+            </div>
           </div>
 
           <div class="dishBox">
@@ -171,7 +185,8 @@
             <div class="dishBoxCross">
               <div class="dishBoxCrossBackground">
                 <span class="fas fa-check"></span>
-              </div>            </div>
+              </div>
+            </div>
           </div>
 
           <div class="dishBox">
@@ -187,7 +202,8 @@
             <div class="dishBoxCross">
               <div class="dishBoxCrossBackground">
                 <span class="fas fa-check"></span>
-              </div>            </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -207,7 +223,8 @@
             <div class="dishBoxCross">
               <div class="dishBoxCrossBackground">
                 <span class="fas fa-check"></span>
-              </div>            </div>
+              </div>
+            </div>
           </div>
 
           <div class="dishBox">
@@ -223,7 +240,8 @@
             <div class="dishBoxCross">
               <div class="dishBoxCrossBackground">
                 <span class="fas fa-check"></span>
-              </div>            </div>
+              </div>
+            </div>
           </div>
 
           <div class="dishBox">
@@ -239,14 +257,13 @@
             <div class="dishBoxCross">
               <div class="dishBoxCrossBackground">
                 <span class="fas fa-check"></span>
-              </div>            </div>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- ORDER -->
-        <button class="buttonOrder">
-          Commander
-        </button>
+        <button class="buttonOrder">Commander</button>
       </section>
     </main>
 

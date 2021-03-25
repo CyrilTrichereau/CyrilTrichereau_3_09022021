@@ -6,6 +6,45 @@
     transform: translateY(-100%);
   }
 }
+@keyframes moveRight {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+@keyframes rotateThreeTimes {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(2turn);
+  }
+}
+@keyframes opacitySpinner {
+  0% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  99% {
+    z-index: 99;
+  }
+  100% {
+    opacity: 0;
+    z-index: -99;
+  }
+}
 *,
 *::after,
 *::before {
@@ -27,6 +66,24 @@ body {
   box-sizing: border-box;
   width: 100%;
   min-height: 100%;
+}
+
+.loadingSpinner {
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: #ffffff;
+  animation: opacitySpinner 2200ms ease-in-out 0ms 1 alternate both;
+}
+.loadingSpinnerLogo {
+  font-size: 4rem;
+  color: #9356DC;
+  animation: rotateThreeTimes 2000ms ease-in 0ms 1 alternate;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -797,15 +854,23 @@ main {
   width: 89.33%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  margin: 1rem 0 2rem 0;
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 1rem 0;
+  padding: 1rem 0;
 }
 .titleMenu h1 {
   width: 80%;
 }
-.titleMenu span {
-  font-size: 1.6rem;
+.titleMenuLogo {
+  font-size: 1.8rem;
+  height: 100%;
+  overflow: hidden;
+}
+.titleMenu .buttonHeartFillBackground {
+  background-color: #f6f6f6;
 }
 
 .dishes {
@@ -898,14 +963,13 @@ main {
   border: none;
   border-radius: 50px;
   box-shadow: 0px 0px 8px 0px #cccccc;
-  opacity: 1;
 }
 .buttonAction p {
   color: #ffffff;
 }
 .buttonAction:hover {
+  background: linear-gradient(to top left, #985ede, #ff83dd);
   box-shadow: 0px 0px 15px 4px #999999;
-  opacity: 0.95;
 }
 
 .buttonOrder {
@@ -915,16 +979,21 @@ main {
   border: none;
   border-radius: 50px;
   box-shadow: 0px 0px 8px 0px #cccccc;
-  opacity: 1;
 }
 .buttonOrder p {
   color: #ffffff;
 }
 .buttonOrder:hover {
+  background: linear-gradient(to top left, #985ede, #ff83dd);
   box-shadow: 0px 0px 15px 4px #999999;
-  opacity: 0.95;
 }
 
+.buttonHeart {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 .buttonHeartEmpty {
   z-index: 3;
   opacity: 1;
@@ -945,15 +1014,29 @@ main {
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .buttonHeartFillBackground {
   z-index: 2;
   position: absolute;
-  width: 100%;
+  width: 5rem;
   height: 50%;
   background-color: #ffffff;
+}
+
+.dishBox {
+  position: relative;
+  cursor: pointer;
+}
+.dishBoxCross {
+  position: absolute;
+  right: -3.5rem;
+}
+.dishBox:hover .dishBoxCross {
+  animation: moveRight 600ms ease-in-out alternate forwards;
+}
+.dishBox:hover .dishBoxCrossBackground span {
+  animation: rotate 800ms ease-in-out alternate forwards;
 }
 
 /*# sourceMappingURL=style.css.map */

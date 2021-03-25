@@ -21,3 +21,19 @@ body {
     width: 100%;
     min-height: 100%;
 }
+
+.loadingSpinner {
+    z-index: 99;
+    @include widthMax;
+    @include heightMax;
+    @include flexRow;
+    @include flexCenterCenter;
+    position: fixed;
+    background-color: $colorWhite;
+    animation: opacitySpinner 2200ms ease-in-out 0ms 1 alternate both;
+    &Logo {
+        font-size: 4rem;
+        color: $colorPrimary;
+        animation: rotateThreeTimes 2000ms ease-in 0ms 1 alternate;
+    }
+}

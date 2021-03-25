@@ -61,8 +61,14 @@
   </head>
 
   <!--    BODY     -->
-  
+
   <body>
+    <!-- LOADING SPINNER -->
+
+    <div class="loadingSpinner">
+      <span class="fas fa-spinner loadingSpinnerLogo"></span>
+    </div>
+
     <!-- HEADER -->
 
     <header class="headerRestaurantsPage">
@@ -73,18 +79,22 @@
     <main>
       <!-- RESTAURANT IMAGE -->
       <img
-      class="restaurantImage"
-      src="../image/francaiseSizeS.jpg"
-      alt="À la française"
-      title="À la française"
-    />
+        class="restaurantImage"
+        src="../image/francaiseSizeS.jpg"
+        alt="À la française"
+        title="À la française"
+      />
 
       <!-- SECTION MENU -->
       <section class="sectionMenu">
         <!-- TITLE -->
         <div class="titleMenu">
           <h1>À la française</h1>
-          <span class="far fa-heart"></span>
+          <button class="buttonHeart titleMenuLogo">
+            <span class="far fa-heart buttonHeartEmpty"> </span>
+            <div class="buttonHeartFillBackground"></div>
+            <span class="fas fa-heart buttonHeartFill"> </span>
+          </button>
         </div>
 
         <!-- STARTERS -->
@@ -199,8 +209,7 @@
 
         <!-- DESSERTS -->
         <div class="dishes">
-          <h2>Desserts
-          </h2>
+          <h2>Desserts</h2>
           <div class="dishBox">
             <div class="dishBoxContent">
               <div class="dishBoxContentTitle">
@@ -254,9 +263,7 @@
         </div>
 
         <!-- ORDER -->
-        <button class="buttonOrder">
-          Commander
-        </button>
+        <button class="buttonOrder">Commander</button>
       </section>
     </main>
 

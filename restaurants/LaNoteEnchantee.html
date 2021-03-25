@@ -61,8 +61,14 @@
   </head>
 
   <!--    BODY     -->
-  
+
   <body>
+    <!-- LOADING SPINNER -->
+
+    <div class="loadingSpinner">
+      <span class="fas fa-spinner loadingSpinnerLogo"></span>
+    </div>
+
     <!-- HEADER -->
 
     <header class="headerRestaurantsPage">
@@ -73,19 +79,23 @@
     <main>
       <!-- RESTAURANT IMAGE -->
       <img
-              class="restaurantImage"
-              src="../image/noteSizeS.jpg"
-              alt="La note enchantée"
-              title="La note enchantée"
-            />
+        class="restaurantImage"
+        src="../image/noteSizeS.jpg"
+        alt="La note enchantée"
+        title="La note enchantée"
+      />
 
       <!-- SECTION MENU -->
       <section class="sectionMenu">
         <!-- TITLE -->
         <div class="titleMenu">
           <h1>La note enchantée</h1>
-          <span class="far fa-heart"></span>
-        </div>
+          <button class="buttonHeart titleMenuLogo">
+            <span class="far fa-heart buttonHeartEmpty"> </span>
+            <div class="buttonHeartFillBackground"></div>
+            <span class="fas fa-heart buttonHeartFill"> </span>
+          </button>
+    </div>
 
         <!-- STARTERS -->
         <div class="dishes">
@@ -93,8 +103,7 @@
           <div class="dishBox">
             <div class="dishBoxContent">
               <div class="dishBoxContentTitle">
-                <h3>Ravioles de foie gras 
-                </h3>
+                <h3>Ravioles de foie gras</h3>
                 <div class="dishBoxContentText">
                   <p>Accompagnés de leur crème à la truffe</p>
                   <em>25€</em>
@@ -104,7 +113,8 @@
             <div class="dishBoxCross">
               <div class="dishBoxCrossBackground">
                 <span class="fas fa-check"></span>
-              </div>            </div>
+              </div>
+            </div>
           </div>
 
           <div class="dishBox">
@@ -120,7 +130,8 @@
             <div class="dishBoxCross">
               <div class="dishBoxCrossBackground">
                 <span class="fas fa-check"></span>
-              </div>            </div>
+              </div>
+            </div>
           </div>
 
           <div class="dishBox">
@@ -136,7 +147,8 @@
             <div class="dishBoxCross">
               <div class="dishBoxCrossBackground">
                 <span class="fas fa-check"></span>
-              </div>            </div>
+              </div>
+            </div>
           </div>
 
           <div class="dishBox">
@@ -152,7 +164,8 @@
             <div class="dishBoxCross">
               <div class="dishBoxCrossBackground">
                 <span class="fas fa-check"></span>
-              </div>            </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -172,7 +185,8 @@
             <div class="dishBoxCross">
               <div class="dishBoxCrossBackground">
                 <span class="fas fa-check"></span>
-              </div>            </div>
+              </div>
+            </div>
           </div>
 
           <div class="dishBox">
@@ -188,13 +202,14 @@
             <div class="dishBoxCross">
               <div class="dishBoxCrossBackground">
                 <span class="fas fa-check"></span>
-              </div>            </div>
+              </div>
+            </div>
           </div>
 
           <div class="dishBox">
             <div class="dishBoxContent">
               <div class="dishBoxContentTitle">
-                <h3>Mijoté de queue de boeuf </h3>
+                <h3>Mijoté de queue de boeuf</h3>
                 <div class="dishBoxContentText">
                   <p>Et riz sauvage aux zestes de citron</p>
                   <em>44€</em>
@@ -204,7 +219,8 @@
             <div class="dishBoxCross">
               <div class="dishBoxCrossBackground">
                 <span class="fas fa-check"></span>
-              </div>            </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -224,13 +240,14 @@
             <div class="dishBoxCross">
               <div class="dishBoxCrossBackground">
                 <span class="fas fa-check"></span>
-              </div>            </div>
+              </div>
+            </div>
           </div>
 
           <div class="dishBox">
             <div class="dishBoxContent">
               <div class="dishBoxContentTitle">
-                <h3>Baba au rhum revisité </h3>
+                <h3>Baba au rhum revisité</h3>
                 <div class="dishBoxContentText">
                   <p>Avec son coulis de citron</p>
                   <em>22€</em>
@@ -240,7 +257,8 @@
             <div class="dishBoxCross">
               <div class="dishBoxCrossBackground">
                 <span class="fas fa-check"></span>
-              </div>            </div>
+              </div>
+            </div>
           </div>
 
           <div class="dishBox">
@@ -256,14 +274,13 @@
             <div class="dishBoxCross">
               <div class="dishBoxCrossBackground">
                 <span class="fas fa-check"></span>
-              </div>            </div>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- ORDER -->
-        <button class="buttonOrder">
-          Commander
-        </button>
+        <button class="buttonOrder">Commander</button>
       </section>
     </main>
 

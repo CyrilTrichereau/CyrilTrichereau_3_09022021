@@ -7,13 +7,12 @@
     border: none;
     border-radius: 50px;
     @include boxShadow;
-    opacity: 1;
     & p { 
     color: $colorWhite;
     }
     &:hover {
+        background: linear-gradient(to top left, $colorPrimaryLight, $colorSecondaryLight);
         @include boxShadowVeryStrong;
-        opacity: 0.95;
     }
 }
 
@@ -26,23 +25,24 @@
     border: none;
     border-radius: 50px;
     @include boxShadow;
-    opacity: 1;
     & p { 
     color: $colorWhite;
     }
     &:hover {
+        background: linear-gradient(to top left, $colorPrimaryLight, $colorSecondaryLight);
         @include boxShadowVeryStrong;
-        opacity: 0.95;
     }
+    
 }
 
 
 
 
 // BUTTON FILLING HEART
-// buttonHeartFillBackground 
 
 .buttonHeart {
+    @include flexRow;
+    @include flexCenterCenter;
     &Empty {
         z-index: 3;
         opacity: 1;
@@ -65,15 +65,52 @@
         background: linear-gradient($colorPrimary, $colorSecondary);
         -webkit-background-clip: text;
         -moz-background-clip: text;
-        background-clip: text;
         -webkit-text-fill-color:transparent;
 
         &Background {
             z-index: 2;
             position: absolute;
-            @include widthMax;
+            width: 5rem;
             height: 50%;
             background-color: $colorWhite;
         }
+    }
+}
+
+
+
+
+// BUTTON GREEN CROSS
+
+.dishBox {
+    position: relative;
+    cursor: pointer;
+    
+    &Content {
+    }
+
+    &Cross{
+        position: absolute;
+        right: -3.5rem;
+
+        &Background {
+
+            & span {
+
+            }
+        }
+    }
+    &:hover {
+        & .dishBoxContent {
+            
+
+        }
+        & .dishBoxCross {
+            animation: moveRight 600ms ease-in-out alternate forwards;
+            &Background span {
+                animation: rotate 800ms ease-in-out alternate forwards;
+            }
+        }
+        
     }
 }
