@@ -14,3 +14,7 @@ $shrikhand: 'Shrikhand', cursive, "Arial Black", Arial, Verdana;
 
 // SIZE
 $widthMobile: 89.33%;
+
+// TIME
+$durationSpinnerLoading: 1500ms;
+$durationRotationSpinner: $durationSpinnerLoading - 200ms;

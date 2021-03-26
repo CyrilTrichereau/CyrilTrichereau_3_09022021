@@ -51,6 +51,8 @@
         @include flexStartCenter;
         @include gapBoxMedium;
         margin: 1rem 0;
+        transform-origin: top;
+        
         & h2 {
             position: relative;
             right: 43%;
@@ -69,6 +71,14 @@
         overflow: hidden;
         background-color: $colorWhite;
         border-radius: 15px;
+        @include boxShadow;
+        animation: dishBoxAppear 800ms $durationSpinnerLoading ease-in-out 1 alternate both;
+                
+        @for $i from 1 through 4 {
+            &:nth-child(#{$i}) {
+                animation-delay: $durationSpinnerLoading + (200ms * $i);
+            }
+        }
 
         &Content {
             @include widthMax;
@@ -111,7 +121,7 @@
                 & em {
                     position: absolute;
                     left: 30%;
-                    top: 50%;
+                    top: 60%;
                 }
             }
         }

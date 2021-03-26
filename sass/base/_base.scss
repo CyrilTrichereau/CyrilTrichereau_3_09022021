@@ -23,7 +23,6 @@ body {
 }
 
 .loadingSpinner {
-    display: none;
     z-index: -99;
     @include widthMax;
     @include heightMax;
@@ -31,10 +30,10 @@ body {
     @include flexCenterCenter;
     position: fixed;
     background-color: $colorWhite;
-    animation: opacitySpinner 2200ms ease-in-out 0ms 1 alternate both;
+    animation: opacitySpinner $durationSpinnerLoading 0ms ease-in-out 1 alternate both;
     &Logo {
         font-size: 4rem;
         color: $colorPrimary;
-        animation: rotateThreeTimes 2000ms ease-in 0ms 1 alternate;
+        animation: rotateTwoTimes $durationRotationSpinner ease-in 0ms 1 alternate;
     }
 }
