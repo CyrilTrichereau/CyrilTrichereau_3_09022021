@@ -7,12 +7,32 @@
     }
 }
 
-@keyframes moveRight {
+
+@keyframes crossMove {
     0%{
         transform: translateX(0%);
     }
     100% {
         transform: translateX(-100%);
+    }
+}
+
+
+@keyframes contentMove {
+    0%{
+        width: 100%;
+    }
+    100% {
+        width: 83%;
+    }
+}
+
+@keyframes priceMove {
+    0%{
+        width: 79.5%;
+    }
+    100% {
+        width: 62.5%;
     }
 }
 

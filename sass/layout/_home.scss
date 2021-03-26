@@ -29,6 +29,8 @@ main {
                 background-color: lighten($colorBlack, 96.5);
                 @include boxShadowRadius;
                 padding: 1.5rem;
+                gap: 2%;
+                
                 position: relative;
                 & span {
                     font-size: 1.3rem;
@@ -116,6 +118,7 @@ main {
                         }
                     }
                     &Logo {
+                        z-index: 10;
                         width: 19.4%;
                         @include heightMax;
                         @include flexRow;

@@ -31,7 +31,7 @@ p, a {
     font-size: 1rem;
 }
 
-// HOME PAGES
+// HOME PAGE
 
 .blockRestaurantsNew p {
     @include robotoBold;  
@@ -66,7 +66,7 @@ p, a {
 .titleMenu h1 {
     width: $widthMobile;
     font-family: $shrikhand;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin: 0;
 }
 
@@ -83,11 +83,11 @@ p, a {
     }
     & p {
         @include roboto;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
     & em { 
         @include robotoBold;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 }    
 

@@ -16,5 +16,7 @@
   "bugs": {
     "url": "https://github.com/BobdAuckland/CyrilTrichereau_3_09022021/issues"
   },
-  "homepage": "https://github.com/BobdAuckland/CyrilTrichereau_3_09022021#readme"
+  "homepage": "https://github.com/BobdAuckland/CyrilTrichereau_3_09022021#readme",
+  "browserslist": "last 4 versions"
+
 }

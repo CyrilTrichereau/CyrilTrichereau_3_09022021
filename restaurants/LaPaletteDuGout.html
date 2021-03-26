@@ -80,8 +80,13 @@
       <!-- RESTAURANT IMAGE -->
       <img
         class="restaurantImage"
-        src="../image/paletteSizeS.jpg"
-        alt="La palette du goût"
+        srcset="../image/palette320w.jpg  320w,
+        ../image/palette425w.jpg  425w,
+        ../image/palette768w.jpg  768w,
+        ../image/palette1024w.jpg  1024w,
+        ../image/palette1440w.jpg  1440w,
+        ../image/palette2560w.jpg  2560w"
+  alt="La palette du goût"
         title="La palette du goût"
       />
 
@@ -100,15 +105,20 @@
         <!-- STARTERS -->
         <div class="dishes">
           <h2>Entrées</h2>
+          
           <div class="dishBox">
             <div class="dishBoxContent">
-              <div class="dishBoxContentTitle">
-                <h3>Fricassée d'escargot</h3>
                 <div class="dishBoxContentText">
-                  <p>Au piment d'Espelette</p>
+                    <div class="dishBoxContentTextTitle">
+                      <h3>Fricassée d'escargot</h3>
+                    </div>
+                    <div class="dishBoxContentTextSides"> 
+                      <p>Au piment d'Espelette</p>
+                    </div>
+                </div>
+                <div class="dishBoxContentPrice">
                   <em>25€</em>
                 </div>
-              </div>
             </div>
             <div class="dishBoxCross">
               <div class="dishBoxCrossBackground">
@@ -116,16 +126,21 @@
               </div>
             </div>
           </div>
-
+  
+  
           <div class="dishBox">
             <div class="dishBoxContent">
-              <div class="dishBoxContentTitle">
-                <h3>Foie gras de canard mi-cuit</h3>
                 <div class="dishBoxContentText">
-                  <p>Et ses copeaux de truffe noire</p>
+                    <div class="dishBoxContentTextTitle">
+                      <h3>Foie gras de canard mi-cuit</h3>
+                    </div>
+                    <div class="dishBoxContentTextSides"> 
+                      <p>Et ses copeaux de truffe noire</p>
+                    </div>
+                </div>
+                <div class="dishBoxContentPrice">
                   <em>35€</em>
                 </div>
-              </div>
             </div>
             <div class="dishBoxCross">
               <div class="dishBoxCrossBackground">
@@ -133,16 +148,20 @@
               </div>
             </div>
           </div>
-
+  
           <div class="dishBox">
             <div class="dishBoxContent">
-              <div class="dishBoxContentTitle">
-                <h3>Oeuf au plat</h3>
                 <div class="dishBoxContentText">
-                  <p>Assaisonné à la truffe sur lit de caviar</p>
+                    <div class="dishBoxContentTextTitle">
+                      <h3>Oeuf au plat</h3>
+                    </div>
+                    <div class="dishBoxContentTextSides"> 
+                      <p>Assaisonné à la truffe sur lit de caviar</p>
+                    </div>
+                </div>
+                <div class="dishBoxContentPrice">
                   <em>20€</em>
                 </div>
-              </div>
             </div>
             <div class="dishBoxCross">
               <div class="dishBoxCrossBackground">
@@ -155,70 +174,88 @@
         <!-- MAIN DISHES -->
         <div class="dishes">
           <h2>Plats</h2>
-          <div class="dishBox">
-            <div class="dishBoxContent">
-              <div class="dishBoxContentTitle">
-                <h3>Filet de boeuf aux herbes</h3>
-                <div class="dishBoxContentText">
-                  <p>Accompagné de sa ribambelle de légumes</p>
-                  <em>40€</em>
-                </div>
-              </div>
-            </div>
-            <div class="dishBoxCross">
-              <div class="dishBoxCrossBackground">
-                <span class="fas fa-check"></span>
-              </div>
-            </div>
-          </div>
 
-          <div class="dishBox">
-            <div class="dishBoxContent">
-              <div class="dishBoxContentTitle">
-                <h3>Parmentier de queue de boeuf</h3>
-                <div class="dishBoxContentText">
-                  <p>À la truffe noire sur sa purée de panais</p>
-                  <em>35€</em>
-                </div>
+        <div class="dishBox">
+          <div class="dishBoxContent">
+              <div class="dishBoxContentText">
+                  <div class="dishBoxContentTextTitle">
+                    <h3>Filet de boeuf aux herbes</h3>
+                  </div>
+                  <div class="dishBoxContentTextSides"> 
+                    <p>Accompagné de sa ribambelle de légumes</p>
+                  </div>
               </div>
-            </div>
-            <div class="dishBoxCross">
-              <div class="dishBoxCrossBackground">
-                <span class="fas fa-check"></span>
+              <div class="dishBoxContentPrice">
+                <em>40€</em>
               </div>
-            </div>
           </div>
-
-          <div class="dishBox">
-            <div class="dishBoxContent">
-              <div class="dishBoxContentTitle">
-                <h3>Filet de turbot</h3>
-                <div class="dishBoxContentText">
-                  <p>Aux agrumes</p>
-                  <em>44€</em>
-                </div>
-              </div>
-            </div>
-            <div class="dishBoxCross">
-              <div class="dishBoxCrossBackground">
-                <span class="fas fa-check"></span>
-              </div>
+          <div class="dishBoxCross">
+            <div class="dishBoxCrossBackground">
+              <span class="fas fa-check"></span>
             </div>
           </div>
         </div>
 
+        <div class="dishBox">
+          <div class="dishBoxContent">
+              <div class="dishBoxContentText">
+                  <div class="dishBoxContentTextTitle">
+                    <h3>Parmentier de queue de boeuf</h3>
+                  </div>
+                  <div class="dishBoxContentTextSides"> 
+                    <p>À la truffe noire sur sa purée de panais</p>
+                  </div>
+              </div>
+              <div class="dishBoxContentPrice">
+                <em>35€</em>
+              </div>
+          </div>
+          <div class="dishBoxCross">
+            <div class="dishBoxCrossBackground">
+              <span class="fas fa-check"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dishBox">
+          <div class="dishBoxContent">
+              <div class="dishBoxContentText">
+                  <div class="dishBoxContentTextTitle">
+                    <h3>Filet de turbot</h3>
+                  </div>
+                  <div class="dishBoxContentTextSides"> 
+                    <p>Aux agrumes</p>
+                  </div>
+              </div>
+              <div class="dishBoxContentPrice">
+                <em>44€</em>
+              </div>
+          </div>
+          <div class="dishBoxCross">
+            <div class="dishBoxCrossBackground">
+              <span class="fas fa-check"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
         <!-- DESSERTS -->
         <div class="dishes">
           <h2>Desserts</h2>
+          
           <div class="dishBox">
             <div class="dishBoxContent">
-              <div class="dishBoxContentTitle">
-                <h3>Paris-Brest</h3>
                 <div class="dishBoxContentText">
-                  <p>Revisité</p>
+                    <div class="dishBoxContentTextTitle">
+                      <h3>Paris-Brest</h3>
+                    </div>
+                    <div class="dishBoxContentTextSides"> 
+                      <p>Revisité</p>
+                    </div>
+                </div>
+                <div class="dishBoxContentPrice">
                   <em>18€</em>
                 </div>
-              </div>
             </div>
             <div class="dishBoxCross">
               <div class="dishBoxCrossBackground">
@@ -226,16 +263,20 @@
               </div>
             </div>
           </div>
-
+  
           <div class="dishBox">
             <div class="dishBoxContent">
-              <div class="dishBoxContentTitle">
-                <h3>Macaron au chocolat d'exception</h3>
                 <div class="dishBoxContentText">
-                  <p>Et glace à la vanille de Madagascar</p>
+                    <div class="dishBoxContentTextTitle">
+                      <h3>Macaron au chocolat d'exception</h3>
+                    </div>
+                    <div class="dishBoxContentTextSides"> 
+                      <p>Et glace à la vanille de Madagascar</p>
+                    </div>
+                </div>
+                <div class="dishBoxContentPrice">
                   <em>22€</em>
                 </div>
-              </div>
             </div>
             <div class="dishBoxCross">
               <div class="dishBoxCrossBackground">
@@ -243,16 +284,20 @@
               </div>
             </div>
           </div>
-
+  
           <div class="dishBox">
             <div class="dishBoxContent">
-              <div class="dishBoxContentTitle">
-                <h3>Mousse au chocolat</h3>
                 <div class="dishBoxContentText">
-                  <p>Au piment d'Espelette et à la truffe noire</p>
+                    <div class="dishBoxContentTextTitle">
+                      <h3>Mousse au chocolat</h3>
+                    </div>
+                    <div class="dishBoxContentTextSides"> 
+                      <p>Au piment d'Espelette et à la truffe noire</p>
+                    </div>
+                </div>
+                <div class="dishBoxContentPrice">
                   <em>23€</em>
                 </div>
-              </div>
             </div>
             <div class="dishBoxCross">
               <div class="dishBoxCrossBackground">

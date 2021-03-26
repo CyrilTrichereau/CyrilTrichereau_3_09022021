@@ -45,20 +45,22 @@
     @include flexCenterCenter;
     &Empty {
         z-index: 3;
+        @include widthMax;
         opacity: 1;
         position: absolute;
         &:hover {
             opacity: 0;
-            transition: opacity 400ms;
+            transition: opacity 250ms;
 
             & + .buttonHeartFillBackground {
-                animation: fillingHeart 800ms 50ms ease-in-out alternate both;
+                animation: fillingHeart 700ms 50ms ease-in-out alternate both;
             }
         }
     }
 
     &Fill {
         z-index: 1;
+        @include widthMax;
         position: absolute;
         background:-moz-linear-gradient($colorPrimary, $colorSecondary); 
         background: -webkit-linear-gradient($colorPrimary, $colorSecondary); 
@@ -68,9 +70,11 @@
         -webkit-text-fill-color:transparent;
 
         &Background {
+            @include widthMax;
             z-index: 2;
             position: absolute;
-            width: 5rem;
+            width: 1.9rem;
+            height: 1.7rem;
             height: 50%;
             background-color: $colorWhite;
         }
@@ -80,33 +84,25 @@
 
 
 
-// BUTTON GREEN CROSS
+// BUTTON GREEN CROSS & DISH BOX
 
 .dishBox {
     position: relative;
     cursor: pointer;
-    
-    &Content {
-    }
 
     &Cross{
         position: absolute;
-        right: -3.5rem;
-
-        &Background {
-
-            & span {
-
-            }
-        }
+        right: -17%;
     }
-    &:hover {
-        & .dishBoxContent {
-            
 
+    &:hover {
+
+        & .dishBoxContent {
+            animation: contentMove 600ms ease-in-out alternate forwards;
         }
+
         & .dishBoxCross {
-            animation: moveRight 600ms ease-in-out alternate forwards;
+            animation: crossMove 600ms ease-in-out alternate forwards;
             &Background span {
                 animation: rotate 800ms ease-in-out alternate forwards;
             }
@@ -114,3 +110,18 @@
         
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
