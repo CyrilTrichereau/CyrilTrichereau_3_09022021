@@ -9,55 +9,33 @@
     <link rel="stylesheet" href="../style.css" />
 
     <!-- Font Awesome Icones -->
-    <script
-      src="https://kit.fontawesome.com/e5957e3859.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/e5957e3859.js" crossorigin="anonymous" ></script>
 
     <!--  Fonts Google -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap"
-      rel="stylesheet"
-    />
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet" />
     <!-- Title and description -->
-    <title>Reservia</title>
-    <meta
-      name="Reservia accueil"
-      content="Reservia, page d'accueil du site de réservement d'hébergements en ligne."
-    />
+    <title>Restaurant Le délice des sens - ohmyfood.com</title>
+    <meta name="Restaurant Le délice des sens - ohmyfood.com" content="Réservez le menu qui vous convient et découvrez des restaurants d'exception, sélectionnés par nos soins." />
 
     <!-- Twitter Card data -->
-    <meta name="twitter:card" content="Reservia accueil" />
-    <meta name="twitter:site" content="@Reservia" />
-    <meta name="twitter:title" content="Reservia" />
-    <meta
-      name="twitter:description"
-      content="Reservia, page d'accueil du site de réservement d'hébergements en ligne."
-    />
+    <meta name="twitter:card" content="Restaurant Le délice des sens - ohmyfood.com" />
+    <meta name="twitter:site" content="@ohmyfood" />
+    <meta name="twitter:title" content="ohmyfood" />
+    <meta name="twitter:description" content="Réservez le menu qui vous convient et découvrez des restaurants d'exception, sélectionnés par nos soins." />
     <meta name="twitter:creator" content="@TrichereauCyril" />
 
     <!-- Twitter Summary card images must be at least 200x200px -->
-    <meta name="twitter:image" content="hicone/logoReservia.svg" />
+    <meta name="twitter:image" content="../image/PrintScreenHomePage768w.jpg" />
 
     <!-- Open Graph data -->
-    <meta property="og:title" content="Reservia" />
+    <meta property="og:title" content="Restaurant Le délice des sens - ohmyfood.com" />
     <meta property="og:type" content="Site Internet Officiel" />
-    <meta property="og:url" content="http://www.reservia.com/" />
-    <meta
-      property="og:image"
-      content="http://reservia.com/icone/logoReservia.svg.jpg"
-    />
-    <meta
-      property="og:description"
-      content="Reservia, page d'accueil du site de réservement d'hébergements en ligne."
-    />
-    <meta property="og:site_name" content="Reservia.com" />
-    <meta
-      property="fb:admins"
-      content="https://www.facebook.com/michel.durand.12/"
-    />
+    <meta property="og:url" content="https://www.ohmyfood.com/" />
+    <meta property="og:image" content="http://ohmyfood.com/image/PrintScreenHomePage768w.jpg" />
+    <meta property="og:description" content="Réservez le menu qui vous convient et découvrez des restaurants d'exception, sélectionnés par nos soins." />
+    <meta property="og:site_name" content="ohmyfood.com" />
+    <meta property="fb:admins" content="https://www.facebook.com/michel.durand.12/" />
   </head>
 
   <!--    BODY     -->
@@ -72,21 +50,35 @@
     <!-- HEADER -->
 
     <header class="headerRestaurantsPage">
-      <a href="../index.html" class="fas fa-arrow-left"></a>
-      <p>ohmyfood</p>
+      <a href="../index.html" class="headerRestaurantsPageBack">
+        <span class="fas fa-arrow-left"></span>
+        <p class="headerRestaurantsPageBackText">Page d'accueil</p>
+      </a>
+      <p class="headerRestaurantsPageLogo">ohmyfood</p>
     </header>
 
     <main>
       <!-- RESTAURANT IMAGE -->
       <img
         class="restaurantImage"
-        srcset="../image/delice320w.jpg  320w,
-        ../image/delice425w.jpg  425w,
-        ../image/delice768w.jpg  768w,
-        ../image/delice1024w.jpg  1024w,
-        ../image/delice1440w.jpg  1440w,
-        ../image/delice2560w.jpg  2560w"
-  alt="Le délice des sens"
+        src="./image/delice320w.jpg"
+        srcset="
+          ../image/delice320w.jpg 320w,
+          ../image/delice425w.jpg 425w,
+          ../image/delice768w.jpg 768w,
+          ../image/delice1024w.jpg 1024w,
+          ../image/delice1440w.jpg 1440w,
+          ../image/delice2560w.jpg 2560w
+        "
+        sizes="
+          (max-width: 320px) 280px,
+          (max-width: 600px) 320px,
+          (max-width: 1000px) 768px,
+          (max-width: 1600px) 1024px,
+          (max-width: 1600px) 1440px,
+          2560px
+        "
+        alt="Le délice des sens"
         title="Le délice des sens"
       />
 
@@ -95,167 +87,168 @@
         <!-- TITLE -->
         <div class="titleMenu">
           <h1>Le délice des sens</h1>
-          <button class="buttonHeart titleMenuLogo">
-            <span class="far fa-heart buttonHeartEmpty"> </span>
-            <div class="buttonHeartFillBackground"></div>
-            <span class="fas fa-heart buttonHeartFill"> </span>
-          </button>
-    </div>
+          <form method="get" class="titleMenuLogo">
+            <button class="buttonHeart">
+              <span class="far fa-heart buttonHeartEmpty"> </span>
+              <span class="buttonHeartFillBackground"></span>
+              <span class="fas fa-heart buttonHeartFill"> </span>
+            </button>
+          </form>
+        </div>
 
         <!-- STARTERS -->
         <div class="dishes">
           <h2>Entrées</h2>
 
-        <div class="dishBox">
-          <div class="dishBoxContent">
+          <div class="dishBox">
+            <div class="dishBoxContent">
               <div class="dishBoxContentText">
-                  <div class="dishBoxContentTextTitle">
-                    <h3>Tartare de thon</h3>
-                  </div>
-                  <div class="dishBoxContentTextSides"> 
-                    <p>Assaisonné au yuzu</p>
-                  </div>
+                <div class="dishBoxContentTextTitle">
+                  <h3>Tartare de thon</h3>
+                </div>
+                <div class="dishBoxContentTextSides">
+                  <p>Assaisonné au yuzu</p>
+                </div>
               </div>
               <div class="dishBoxContentPrice">
                 <em>25€</em>
               </div>
-          </div>
-          <div class="dishBoxCross">
-            <div class="dishBoxCrossBackground">
-              <span class="fas fa-check"></span>
+            </div>
+            <div class="dishBoxCross">
+              <div class="dishBoxCrossBackground">
+                <span class="fas fa-check"></span>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="dishBox">
-          <div class="dishBoxContent">
+          <div class="dishBox">
+            <div class="dishBoxContent">
               <div class="dishBoxContentText">
-                  <div class="dishBoxContentTextTitle">
-                    <h3>Bouchée de homard croustillant</h3>
-                  </div>
-                  <div class="dishBoxContentTextSides"> 
-                    <p>Et sa farandole de petits légumes</p>
-                  </div>
+                <div class="dishBoxContentTextTitle">
+                  <h3>Bouchée de homard croustillant</h3>
+                </div>
+                <div class="dishBoxContentTextSides">
+                  <p>Et sa farandole de petits légumes</p>
+                </div>
               </div>
               <div class="dishBoxContentPrice">
                 <em>35€</em>
               </div>
-          </div>
-          <div class="dishBoxCross">
-            <div class="dishBoxCrossBackground">
-              <span class="fas fa-check"></span>
+            </div>
+            <div class="dishBoxCross">
+              <div class="dishBoxCrossBackground">
+                <span class="fas fa-check"></span>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="dishBox">
-          <div class="dishBoxContent">
+          <div class="dishBox">
+            <div class="dishBoxContent">
               <div class="dishBoxContentText">
-                  <div class="dishBoxContentTextTitle">
-                    <h3>Velouté de cèpes</h3>
-                  </div>
-                  <div class="dishBoxContentTextSides"> 
-                    <p>Aux truffes</p>
-                  </div>
+                <div class="dishBoxContentTextTitle">
+                  <h3>Velouté de cèpes</h3>
+                </div>
+                <div class="dishBoxContentTextSides">
+                  <p>Aux truffes</p>
+                </div>
               </div>
               <div class="dishBoxContentPrice">
                 <em>20€</em>
               </div>
-          </div>
-          <div class="dishBoxCross">
-            <div class="dishBoxCrossBackground">
-              <span class="fas fa-check"></span>
+            </div>
+            <div class="dishBoxCross">
+              <div class="dishBoxCrossBackground">
+                <span class="fas fa-check"></span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
         <!-- MAIN DISHES -->
         <div class="dishes">
           <h2>Plats</h2>
 
-        <div class="dishBox">
-          <div class="dishBoxContent">
+          <div class="dishBox">
+            <div class="dishBoxContent">
               <div class="dishBoxContentText">
-                  <div class="dishBoxContentTextTitle">
-                    <h3>Poulet rôti aux herbes de Provence</h3>
-                  </div>
-                  <div class="dishBoxContentTextSides"> 
-                    <p>Et sa crème de truffe</p>
-                  </div>
+                <div class="dishBoxContentTextTitle">
+                  <h3>Poulet rôti aux herbes de Provence</h3>
+                </div>
+                <div class="dishBoxContentTextSides">
+                  <p>Et sa crème de truffe</p>
+                </div>
               </div>
               <div class="dishBoxContentPrice">
                 <em>40€</em>
               </div>
-          </div>
-          <div class="dishBoxCross">
-            <div class="dishBoxCrossBackground">
-              <span class="fas fa-check"></span>
+            </div>
+            <div class="dishBoxCross">
+              <div class="dishBoxCrossBackground">
+                <span class="fas fa-check"></span>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="dishBox">
-          <div class="dishBoxContent">
+          <div class="dishBox">
+            <div class="dishBoxContent">
               <div class="dishBoxContentText">
-                  <div class="dishBoxContentTextTitle">
-                    <h3>Langouste rôtie</h3>
-                  </div>
-                  <div class="dishBoxContentTextSides"> 
-                    <p>Et ses légumes de saison</p>
-                  </div>
+                <div class="dishBoxContentTextTitle">
+                  <h3>Langouste rôtie</h3>
+                </div>
+                <div class="dishBoxContentTextSides">
+                  <p>Et ses légumes de saison</p>
+                </div>
               </div>
               <div class="dishBoxContentPrice">
                 <em>35€</em>
               </div>
-          </div>
-          <div class="dishBoxCross">
-            <div class="dishBoxCrossBackground">
-              <span class="fas fa-check"></span>
+            </div>
+            <div class="dishBoxCross">
+              <div class="dishBoxCrossBackground">
+                <span class="fas fa-check"></span>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="dishBox">
-          <div class="dishBoxContent">
+          <div class="dishBox">
+            <div class="dishBoxContent">
               <div class="dishBoxContentText">
-                  <div class="dishBoxContentTextTitle">
-                    <h3>Côte de boeuf Angus</h3>
-                  </div>
-                  <div class="dishBoxContentTextSides"> 
-                    <p>Et sa purée de panais</p>
-                  </div>
+                <div class="dishBoxContentTextTitle">
+                  <h3>Côte de boeuf Angus</h3>
+                </div>
+                <div class="dishBoxContentTextSides">
+                  <p>Et sa purée de panais</p>
+                </div>
               </div>
               <div class="dishBoxContentPrice">
                 <em>44€</em>
               </div>
-          </div>
-          <div class="dishBoxCross">
-            <div class="dishBoxCrossBackground">
-              <span class="fas fa-check"></span>
+            </div>
+            <div class="dishBoxCross">
+              <div class="dishBoxCrossBackground">
+                <span class="fas fa-check"></span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
 
         <!-- DESSERTS -->
         <div class="dishes">
           <h2>Desserts</h2>
-          
+
           <div class="dishBox">
             <div class="dishBoxContent">
-                <div class="dishBoxContentText">
-                    <div class="dishBoxContentTextTitle">
-                      <h3>Farandole de desserts</h3>
-                    </div>
-                    <div class="dishBoxContentTextSides"> 
-                      <p>Du chef</p>
-                    </div>
+              <div class="dishBoxContentText">
+                <div class="dishBoxContentTextTitle">
+                  <h3>Farandole de desserts</h3>
                 </div>
-                <div class="dishBoxContentPrice">
-                  <em>18€</em>
+                <div class="dishBoxContentTextSides">
+                  <p>Du chef</p>
                 </div>
+              </div>
+              <div class="dishBoxContentPrice">
+                <em>18€</em>
+              </div>
             </div>
             <div class="dishBoxCross">
               <div class="dishBoxCrossBackground">
@@ -263,20 +256,20 @@
               </div>
             </div>
           </div>
-  
+
           <div class="dishBox">
             <div class="dishBoxContent">
-                <div class="dishBoxContentText">
-                    <div class="dishBoxContentTextTitle">
-                      <h3>Crème brulée</h3>
-                    </div>
-                    <div class="dishBoxContentTextSides"> 
-                      <p>Revisitée</p>
-                    </div>
+              <div class="dishBoxContentText">
+                <div class="dishBoxContentTextTitle">
+                  <h3>Crème brulée</h3>
                 </div>
-                <div class="dishBoxContentPrice">
-                  <em>22€</em>
+                <div class="dishBoxContentTextSides">
+                  <p>Revisitée</p>
                 </div>
+              </div>
+              <div class="dishBoxContentPrice">
+                <em>22€</em>
+              </div>
             </div>
             <div class="dishBoxCross">
               <div class="dishBoxCrossBackground">
@@ -284,20 +277,20 @@
               </div>
             </div>
           </div>
-  
+
           <div class="dishBox">
             <div class="dishBoxContent">
-                <div class="dishBoxContentText">
-                    <div class="dishBoxContentTextTitle">
-                      <h3>Tiramisu</h3>
-                    </div>
-                    <div class="dishBoxContentTextSides"> 
-                      <p>À la noisette</p>
-                    </div>
+              <div class="dishBoxContentText">
+                <div class="dishBoxContentTextTitle">
+                  <h3>Tiramisu</h3>
                 </div>
-                <div class="dishBoxContentPrice">
-                  <em>23€</em>
+                <div class="dishBoxContentTextSides">
+                  <p>À la noisette</p>
                 </div>
+              </div>
+              <div class="dishBoxContentPrice">
+                <em>23€</em>
+              </div>
             </div>
             <div class="dishBoxCross">
               <div class="dishBoxCrossBackground">
@@ -308,7 +301,9 @@
         </div>
 
         <!-- ORDER -->
-        <button class="buttonOrder">Commander</button>
+        <form method="get" class="formOrder">
+          <button class="formOrderButton buttonTypo">Commander</button>
+        </form>
       </section>
     </main>
 
@@ -327,10 +322,10 @@
           <span class="fas fa-hands-helping"></span>
           <p class="contactBoxText">Devenir partenaire</p>
         </a>
-        <a href="">
+        <a href="" class="contactBoxLine">
           <p class="contactBoxText">Mentions légales</p>
         </a>
-        <a href="mailto:contact@ohmyfood.fr">
+        <a href="mailto:contact@ohmyfood.fr" class="contactBoxLine">
           <p class="contactBoxText">Contact</p>
         </a>
       </div>

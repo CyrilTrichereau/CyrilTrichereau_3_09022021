@@ -5,8 +5,8 @@ $colorSecondary: #FF79DA ;
 $colorTertiary: #99E2D0 ;
 $colorWhite: #ffffff;
 $colorBlack: #000000;
-$colorPrimaryLight: lighten($colorPrimary, 2%);
-$colorSecondaryLight: lighten($colorSecondary, 2%);
+$colorPrimaryLight: lighten($colorPrimary, 5%);
+$colorSecondaryLight: lighten($colorSecondary, 5%);
 
 // TEXT
 $roboto: 'Roboto', sans-serif, "Arial Black", Arial, Verdana;
@@ -14,7 +14,20 @@ $shrikhand: 'Shrikhand', cursive, "Arial Black", Arial, Verdana;
 
 // SIZE
 $widthMobile: 89.33%;
+$widthGreenButton: 4.4rem;
 
 // TIME
 $durationSpinnerLoading: 1500ms;
 $durationRotationSpinner: $durationSpinnerLoading - 200ms;
+
+$breakpoints: (
+    mobile: 599px,
+    minTablet: 600px,
+    maxTablet: 999px,
+    minDesktop: 1000px,
+    maxDesktop: 1599px,
+    min4k: 1600px
+);
+
+
+

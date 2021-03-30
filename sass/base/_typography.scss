@@ -1,95 +1,96 @@
+// GENERAL TYPOGRAPHY
+
 html, body {
     @include roboto;
     font-size: 1.1rem;
 }
 
-.logoHeader p, .headerRestaurantsPage p  {
+.logoHeader p, .headerRestaurantsPageLogo {
     @include logoHeader;
 }
+
 
 h1{
     @include robotoExtraBold;
     font-size: 1.5rem;
     margin: 2rem 2rem 1rem 2rem;
+
+    @include sizeTablet {
+        font-size: 1.6rem;
+    }
+    @include sizeDesktop {
+        font-size: 1.8rem;
+    }
+    @include size4k {
+        font-size: 1.9rem;
+    }
 }
 
 h2 { 
     @include robotoBold;  
     font-size: 1.5rem;
     margin: 3rem 0 2rem 0;
-    @include widthMax;
+    @include widthMax;    
+    max-width: map-get($breakpoints, maxDesktop);
+    
+    @include sizeTablet {
+        font-size: 1.6rem;
+    }
+    @include sizeDesktop {
+        font-size: 1.8rem;
+    }
+    @include size4k {
+        font-size: 1.9rem;
+    }
 }
 
 h3 {
     @include robotoBold;  
     font-size: 1rem;
+    
+    @include sizeTablet {
+        font-size: 1.1rem;
+    }
+    @include sizeDesktop {
+        font-size: 1.3rem;
+    }
+    @include size4k {
+        font-size: 1.5rem;
+    }
 }
 
 
 p, a {
     @include roboto;
     font-size: 1rem;
+    
+    @include sizeTablet {
+        font-size: 1.1rem;
+    }
+    @include sizeDesktop {
+        font-size: 1.3rem;
+    }
+    @include size4k {
+        font-size: 1.5rem;
+    }
 }
 
-// HOME PAGE
-
-.blockRestaurantsNew p {
-    @include robotoBold;  
-    font-size: 0.8rem;
-    color: darken($colorTertiary, 38);
-}
-
-.operationListItemPositionNumber {
-    @include robotoBold;
-    font-size: 0.8rem;
-    color: $colorWhite;
-}
-
-.operationListItemText {
-    @include robotoBold;
-    font-size: 1rem;
-}
-
-.logoFooter > p {
-    @include logoFooter;
-    margin: 1rem 0;
-}
-
-.contactBoxText, .buttonAction, .buttonOrder {
+.buttonTypo {
     @include roboto;
     font-size: 0.9rem;
     color: $colorWhite;
-}
-
-// MENU PAGES
-
-.titleMenu h1 {
-    width: $widthMobile;
-    font-family: $shrikhand;
-    font-size: 1.5rem;
-    margin: 0;
-}
-
-.dishes {
-    & h2 {
-    @include roboto;
-    font-size: 1.1rem; 
-    text-transform: uppercase;    
-    }
-    & h3 {
-        @include robotoBold;  
+    @include sizeTablet {
         font-size: 0.9rem;
-        margin: 0 0 0.5rem 0;
     }
-    & p {
-        @include roboto;
-        font-size: 0.7rem;
+    @include sizeDesktop {
+        font-size: 1rem;
     }
-    & em { 
-        @include robotoBold;
-        font-size: 0.8rem;
+    @include size4k {
+        font-size: 1.1rem;
     }
-}    
+}
+
+ 
 
 
 

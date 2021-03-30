@@ -29,6 +29,18 @@
     text-decoration: none;
     font-size: 2.25rem;
     text-align: center;
+    @include sizeTablet {
+        font-size: 3rem;
+        padding: 0.5rem 0;
+    }
+    @include sizeDesktop {
+        font-size: 4rem;
+        padding: 1rem 0;
+    }
+    @include size4k {
+        font-size: 5rem;
+        padding: 1.5rem 0;
+    }
 }
 
 @mixin logoFooter {
@@ -38,6 +50,15 @@
     text-decoration: none;
     font-size: 1.1rem;
     text-align: left;
+    @include sizeTablet {
+        font-size: 1.3rem;
+    }
+    @include sizeDesktop {
+        font-size: 1.5rem;
+    }
+    @include size4k {
+        font-size: 1.8rem;
+    }
 }
 
 
@@ -52,19 +73,28 @@
 @mixin boxShadowVeryStrong {
     box-shadow: 0px 0px 15px 4px lighten($colorBlack, 60);
 }
-@mixin boxRadius {
+@mixin boxRadius25 {
     border-radius: 25px;
 }
 
-@mixin boxShadowRadius {
+@mixin boxRadius50 {
+    border-radius: 50px;
+}
+
+@mixin boxShadowRadius25 {
     @include boxShadow;
-    @include boxRadius;
+    @include boxRadius25;
+}
+
+@mixin boxShadowRadius50 {
+    @include boxShadow;
+    @include boxRadius50;
 }
 
 
 
+// SIZES
 
-// LAYOUT
 @mixin widthMax {
     width: 100%;
 }
@@ -103,6 +133,10 @@
     align-items: flex-start;
 }
 
+@mixin gapBoxExtraLarge {
+    gap: 2.5rem;
+}
+
 @mixin gapBoxLarge {
     gap: 1.5rem;
 }
@@ -114,3 +148,31 @@
 @mixin gapBoxSmall {
     gap: 0.5rem;
 }
+
+
+// MEDIA QUERIES
+
+@mixin sizeTablet {
+    @media screen and (min-width: map-get($breakpoints, minTablet)) and (max-width: map-get($breakpoints, maxTablet)) {
+        @content;
+    }
+}
+
+@mixin sizeDesktop {
+    @media screen and (min-width: map-get($breakpoints, minDesktop)) and (max-width: map-get($breakpoints, maxDesktop)) {
+        @content;
+    }
+}
+
+@mixin size4k {
+    @media screen and (min-width: map-get($breakpoints, min4k)) {
+        @content;
+    }
+}
+
+@mixin sizeNoMobile {
+    @media screen and (min-width: map-get($breakpoints, minTablet)) {
+        @content;
+    }
+}
+

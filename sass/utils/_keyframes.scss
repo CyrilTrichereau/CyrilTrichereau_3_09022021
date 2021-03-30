@@ -1,3 +1,4 @@
+// ANIMATION FILLING HEART
 @keyframes fillingHeart {
     0%{
         transform: translateY(0%);
@@ -7,7 +8,7 @@
     }
 }
 
-
+// ANIMATIONS DISH BOX GREEN CROSS
 @keyframes crossMove {
     0%{
         transform: translateX(0%);
@@ -23,7 +24,16 @@
         width: 100%;
     }
     100% {
-        width: 83%;
+        width: 80%;
+    }
+}
+
+@keyframes contentMoveDesktop {
+    0%{
+        width: 100%;
+    }
+    100% {
+        width: 78%;
     }
 }
 
@@ -46,17 +56,19 @@
     }
 }
 
-
-@keyframes rotateTwoTimes {
+@keyframes dishBoxAppear {
     0%{
-        transform: rotate(0);
+        opacity: 0;
+        transform: translateY(40%);
     }
     100% {
-        transform: rotate(2turn);
+        opacity: 1;
+        transform: translateY(0%);
     }
 }
 
 
+// ANIMATIONS SPINNER LOADING
 @keyframes opacitySpinner {
     0%{
         opacity: 1;
@@ -74,13 +86,11 @@
     }
 }
 
-@keyframes dishBoxAppear {
+@keyframes rotateTwoTimes {
     0%{
-        opacity: 0;
-        transform: translateY(40%);
+        transform: rotate(0);
     }
     100% {
-        opacity: 1;
-        transform: translateY(0%);
+        transform: rotate(2turn);
     }
 }
