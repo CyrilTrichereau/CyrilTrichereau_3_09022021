@@ -4,8 +4,8 @@
   "description": "Projet 3 Openclassrooms - Formation Développeur Web - Dynamisez une page web avec des animations CSS",
   "main": "index.html",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./style.css",
-    "prefix": "postcss ./style.css --use autoprefixer -d ./prefixed/"
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style compressed",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,4 @@
   },
   "homepage": "https://github.com/BobdAuckland/CyrilTrichereau_3_09022021#readme",
   "browserslist": "last 4 versions"
-
 }

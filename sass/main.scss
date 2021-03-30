@@ -1,8 +1,6 @@
 // @import "./utils";
 @import "./utils/variables";
-@import "./utils/functions";
 @import "./utils/mixins";
-@import "./utils/placeholders";
 @import "./utils/keyframes";
 
 // @import "./vendors";
@@ -14,10 +12,7 @@
 
 // @import "./layout";
 @import "./layout/footer";
-@import "./layout/form";
 @import "./layout/header";
-@import "./layout/home";
-@import "./layout/restaurant";
 
 // @import "./components";
 @import "./components/buttons";
