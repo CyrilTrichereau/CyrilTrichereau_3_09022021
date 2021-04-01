@@ -47,7 +47,7 @@
     background: none;
     &Empty {
         z-index: 3;
-        width: auto;
+        @include widthMax;
         height: auto;
         opacity: 1;
         position: absolute;
@@ -63,7 +63,7 @@
 
     &Fill {
         z-index: 1;
-        width: auto;
+        @include widthMax;
         height: auto;
         position: absolute;
         background:-moz-linear-gradient($colorPrimary, $colorSecondary); 
