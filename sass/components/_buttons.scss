@@ -38,11 +38,17 @@
 // BUTTON FILLING HEART (home page & restaurants pages)
 
 .buttonHeart {
+    width: 3rem;
+    height: 3rem;
     @include flexRow;
     @include flexCenterCenter;
+    position: relative;
+    border: none;
+    background: none;
     &Empty {
         z-index: 3;
         width: auto;
+        height: auto;
         opacity: 1;
         position: absolute;
         &:hover {
@@ -58,6 +64,7 @@
     &Fill {
         z-index: 1;
         width: auto;
+        height: auto;
         position: absolute;
         background:-moz-linear-gradient($colorPrimary, $colorSecondary); 
         background: -webkit-linear-gradient($colorPrimary, $colorSecondary); 
@@ -68,24 +75,10 @@
 
         &Background {
             @include widthMax;
+            @include heightMax;
             z-index: 2;
             position: absolute;
-            width: 1.9rem;
-            height: 1.7rem;
-            height: 50%;
             background-color: $colorWhite;
-            @include sizeTablet {
-                width: 2.2rem;
-                height: 2rem;
-                }
-            @include sizeDesktop {
-                width: 2.7rem;
-                height: 2.5rem;
-                }
-            @include size4k {
-                width: 3.2rem;
-                height: 3rem;
-                }
         }
     }
 }
@@ -109,10 +102,7 @@
         & .dishBoxContent {
             animation: contentMove 600ms ease-in-out alternate forwards;
             
-            @include sizeDesktop {
-                animation: contentMoveDesktop 600ms ease-in-out alternate forwards;
-            }
-            @include size4k {
+            @include sizeNoMobile {
                 animation: contentMoveDesktop 600ms ease-in-out alternate forwards;
             }
         }

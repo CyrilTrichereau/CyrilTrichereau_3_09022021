@@ -10,11 +10,11 @@ $colorSecondaryLight: lighten($colorSecondary, 5%);
 
 // TEXT
 $roboto: 'Roboto', sans-serif, "Arial Black", Arial, Verdana;
-$shrikhand: 'Shrikhand', cursive, "Arial Black", Arial, Verdana;
+$shrikhand: 'Shrikhand', 'cursive', "Arial Black", Arial, Verdana;
 
 // SIZE
 $widthMobile: 89.33%;
-$widthGreenButton: 4.4rem;
+$widthGreenButton: 18%;
 
 // TIME
 $durationSpinnerLoading: 1500ms;

@@ -194,28 +194,31 @@ main {
 
                 &Logo {
                     z-index: 10;
-                    width: 3rem;
+                    width: 3.5rem;
                     height: 3rem;
                     @include flexRow;
                     @include flexCenterCenter;
                     font-size: 1.7rem;
                     position: absolute;
                     top: 78%;
-                    right: 1rem;
+                    right: 2%;
                     overflow: hidden;
                     background: $colorWhite;
                     border: none;
                     @include sizeTablet {
                         top: 79%;
                         font-size: 2rem;
+                        right: 4%;
                     }
                     @include sizeDesktop {
                         top: 80%;
                         font-size: 2.5rem;
+                        right: 4%;
                     }
                     @include size4k {
                         top: 81%;
                         font-size: 3rem;
+                        right: 4%;
                     }
                 }
             }

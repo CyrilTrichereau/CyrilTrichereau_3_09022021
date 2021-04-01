@@ -42,7 +42,7 @@
         @include flexCenterStart;
         flex-wrap: wrap;
         position: absolute;
-        top: 15%;
+        top: 180px;
         margin: 0;
         padding: 1rem 0;
         border-radius: 35px;
@@ -58,7 +58,7 @@
         position: relative;
         overflow: hidden;
         margin: 0 0 1rem 0;
-        padding: 1rem 0;
+        padding: 0;
         @include gapBoxMedium;
 
         @include sizeDesktop {
@@ -70,7 +70,7 @@
             @include widthMax;
             max-width: unset;
             @include gapBoxExtraLarge;
-            padding: 1.5rem 0 1rem 0;
+            padding: 1.5rem 0 2rem 0;
             width: $widthMobile;
             font-family: $shrikhand;
             font-size: 1.5rem;
@@ -78,8 +78,18 @@
         }
     
         & h1 {
-            width: 80%;
+            width: 85%;
+            @include heightMax;
+            min-height: 3rem;
+            @include flexRow;
+            @include flexCenterCenter;
             padding: 0 0 0 0.2rem;
+            margin: 0;
+
+            font-size: 1.45rem;
+            font-family: $shrikhand;
+            font-weight: 400;
+            
 
             @include sizeTablet {
                 font-size: 1.6rem;
@@ -96,11 +106,15 @@
             }
         }
         &Logo {
-            width: 2rem;
+            width: 15%;
             @include heightMax;
+            @include flexRow;
+            @include flexCenterCenter;
             font-size: 1.8rem;
             overflow: hidden;
             border: none;
+            position: relative;
+            right: 0;
             @include sizeTablet {
                 font-size: 2rem;
             }

@@ -24,7 +24,7 @@
         width: 100%;
     }
     100% {
-        width: 80%;
+        width: (100%-$widthGreenButton);
     }
 }
 
