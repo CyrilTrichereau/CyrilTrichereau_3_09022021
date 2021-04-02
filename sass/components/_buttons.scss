@@ -22,6 +22,7 @@
     padding: 1rem 3.5rem;
     border: none;
     @include boxShadowRadius50;
+    cursor: pointer;
     & p { 
     color: $colorWhite;
     }
@@ -34,87 +35,6 @@
 
 
 
-
-// BUTTON FILLING HEART (home page & restaurants pages)
-
-.buttonHeart {
-    width: 3rem;
-    height: 3rem;
-    @include flexRow;
-    @include flexCenterCenter;
-    position: relative;
-    border: none;
-    background: none;
-    &Empty {
-        z-index: 3;
-        @include widthMax;
-        height: auto;
-        opacity: 1;
-        position: absolute;
-        &:hover {
-            opacity: 0;
-            transition: opacity 250ms;
-
-            & + .buttonHeartFillBackground {
-                animation: fillingHeart 700ms 50ms ease-in-out alternate both;
-            }
-        }
-    }
-
-    &Fill {
-        z-index: 1;
-        @include widthMax;
-        height: auto;
-        position: absolute;
-        background:-moz-linear-gradient($colorPrimary, $colorSecondary); 
-        background: -webkit-linear-gradient($colorPrimary, $colorSecondary); 
-        background: linear-gradient($colorPrimary, $colorSecondary);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        -webkit-text-fill-color:transparent;
-
-        &Background {
-            @include widthMax;
-            @include heightMax;
-            z-index: 2;
-            position: absolute;
-            background-color: $colorWhite;
-        }
-    }
-}
-
-
-
-
-// BUTTON GREEN CROSS & DISH BOX
-
-.dishBox {
-    position: relative;
-    cursor: pointer;
-
-    &Cross{
-        position: absolute;
-        right: -$widthGreenButton;
-    }
-
-    &:hover {
-
-        & .dishBoxContent {
-            animation: contentMove 600ms ease-in-out alternate forwards;
-            
-            @include sizeNoMobile {
-                animation: contentMoveDesktop 600ms ease-in-out alternate forwards;
-            }
-        }
-
-        & .dishBoxCross {
-            animation: crossMove 600ms ease-in-out alternate forwards;
-            &Background span {
-                animation: rotate 800ms ease-in-out alternate forwards;
-            }
-        }   
-    }
-}
 
 
 

@@ -1,0 +1,144 @@
+// DISH BOX
+.dishBox {
+    @include widthMax;
+    height: 4rem;
+    @include flexRow;
+    @include flexStartCenter;
+    overflow: hidden;
+    background-color: $colorWhite;
+    border-radius: 15px;
+    @include boxShadow;
+    animation: dishBoxAppear 800ms $durationSpinnerLoading ease-in-out 1 alternate both;
+
+    @include sizeTablet {
+        height: 4.5rem;
+    }
+    @include sizeDesktop {
+        height: 5rem;
+    }
+    @include size4k {
+        height: 5.5rem;
+    }
+            
+    @for $i from 1 through 5 {
+        &:nth-child(#{$i}) {
+            animation-delay: $durationSpinnerLoading + (200ms * $i);
+        }
+    }
+
+    & h3 {
+        @include robotoBold;  
+        font-size: 0.9rem;
+        margin: 0 0 0.5rem 0;
+            
+        @include sizeTablet {
+            font-size: 1rem;
+        }
+        @include sizeDesktop {
+            font-size: 1.1rem;
+        }
+        @include size4k {
+            font-size: 1.2rem;
+        }
+    }
+    & p {
+        @include roboto;
+        font-size: 0.7rem;
+            
+        @include sizeTablet {
+            font-size: 0.8rem;
+        }
+        @include sizeDesktop {
+            font-size: 0.9rem;
+        }
+        @include size4k {
+            font-size: 1rem;
+        }
+
+    }
+    & em { 
+        @include robotoBold;
+        font-size: 0.8rem;
+            
+        @include sizeTablet {
+            font-size: 1rem;
+        }
+        @include sizeDesktop {
+            font-size: 1.1rem;
+        }
+        @include size4k {
+            font-size: 1.2rem;
+        }
+    }
+
+    &Content {
+        @include widthMax;
+        @include heightMax;
+        @include flexRow;
+        @include flexCenterCenter;
+        padding: 0.5rem 0 0.5rem 0.5rem;
+
+        @include sizeNoMobile {
+            margin: 0 0 0 0.7rem;
+        }
+
+        &Text {
+            width: 83%;
+            @include heightMax;
+            @include flexColumn;
+            @include flexCenterCenter;
+
+            &Title {
+                @include widthMax;
+                
+                & h3 {
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+            }
+
+            &Sides {
+                @include widthMax;
+
+                & p {
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+            }
+        }
+        &Price {
+            width: 17%;
+            @include heightMax;
+            position: relative;
+
+            & em {
+                position: absolute;
+                left: 30%;
+                top: 60%;
+            }
+        }
+    }
+
+    &Cross {
+        width: $widthGreenButton;
+        @include heightMax;
+        @include flexRow;
+        @include flexCenterCenter;
+        background-color: $colorTertiary;
+
+        &Background {
+            width: 1.2rem;
+            height: 1.2rem;
+            @include flexRow;
+            @include flexCenterCenter;
+            background-color: $colorWhite;
+            @include boxRadius25;
+            & span {
+                color: $colorTertiary;
+                font-size: 0.8rem; 
+            }
+        }           
+    }
+}

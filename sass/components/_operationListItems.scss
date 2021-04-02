@@ -1,0 +1,74 @@
+// Operation List Items
+.operationListItem {
+    @include widthMax;
+    max-width: 440px;
+    @include flexRow;
+    @include flexCenterCenter;
+    background-color: lighten($colorBlack, 96.5);
+    @include boxShadowRadius25;
+    padding: 1.5rem;
+    gap: 2%;
+    position: relative;
+    
+    @include sizeNoMobile {
+        @include flexStartCenter;
+    }
+    @include sizeDesktop {
+        max-width: 420px;
+    }
+    & span {
+        font-size: 1.3rem;
+        color: lighten($colorBlack, 49.5);
+        margin: 0 1.5rem 0 0;
+        @include sizeNoMobile {
+            font-size: 1.6rem;
+        }
+    }
+    &:nth-child(3) {
+        background: lighten($colorPrimary, 36.2);
+        & span {
+            color: $colorPrimary;           
+        }
+    }
+    &Position {
+        @include flexColumn;
+        @include flexCenterCenter;
+        position: absolute;
+        left: -0.75rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: $colorPrimary;
+        @include boxRadius25;
+
+        @include sizeNoMobile {
+            position: relative;
+            margin: 0 10% 0 2%;
+            width: 2rem;
+            height: 2rem;
+        }
+
+        &Number {
+            @include robotoBold;
+            font-size: 0.8rem;
+            color: $colorWhite;
+            @include sizeNoMobile {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    &Text {
+        @include robotoBold;
+        font-size: 1rem;
+    
+        @include sizeTablet {
+            font-size: 1.1rem;
+        }
+        @include sizeDesktop {
+            font-size: 1.1rem;
+        }
+        @include size4k {
+            font-size: 1.2rem;
+        }
+    }
+}

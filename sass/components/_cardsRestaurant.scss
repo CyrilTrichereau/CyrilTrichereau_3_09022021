@@ -1,0 +1,81 @@
+
+// CARDS RESTAURANT
+.blockRestaurants {
+  @include widthMax;
+  height: 15rem;
+  @include flexColumn;
+  @include flexCenterStart;
+  @include boxShadowRadius25;
+  position: relative;
+  overflow: hidden;
+  background: $colorWhite;
+
+  @include sizeTablet {
+    height: 18rem;
+  }
+  @include sizeDesktop {
+    max-width: 48%;
+    height: 18rem;
+  }
+  @include size4k {
+    max-width: 48%;
+    height: 22rem;
+  }
+
+  &New {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  &Picture {
+    @include widthMax;
+    height: 75%;
+    @include flexColumn;
+    @include flexCenterCenter;
+    & img {
+      @include widthMax;
+      @include heightMax;
+      object-fit: cover;
+      object-position: 50% 60%;
+    }
+  }
+
+  &Footer {
+    width: 80.6%;
+    height: 25%;
+    @include flexColumn;
+    @include flexCenterStart;
+    @include gapBoxSmall;
+    margin: 0 0 0 6%;
+  }
+
+  &Logo {
+    z-index: 10;
+    width: 15%;
+    height: 3rem;
+    @include flexRow;
+    @include flexCenterCenter;
+    font-size: 1.7rem;
+    position: absolute;
+    top: 78%;
+    right: 2%;
+    overflow: hidden;
+    background: $colorWhite;
+    @include sizeTablet {
+      top: 79%;
+      font-size: 2rem;
+      right: 4%;
+    }
+    @include sizeDesktop {
+      top: 80%;
+      font-size: 2.5rem;
+      right: 4%;
+    }
+    @include size4k {
+      top: 81%;
+      font-size: 3rem;
+      right: 4%;
+    }
+  }
+}

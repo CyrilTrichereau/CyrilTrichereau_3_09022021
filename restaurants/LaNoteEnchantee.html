@@ -102,9 +102,9 @@
           (max-width: 320px) 280px,
           (max-width: 600px) 320px,
           (max-width: 1000px) 768px,
-          (max-width: 1600px) 1024px,
+          (max-width: 1400px) 1024px,
           (max-width: 1600px) 1440px,
-          2560px
+          (min-width: 1601px) 2560px
         "
         alt="La note enchantée"
         title="La note enchantée"
@@ -115,13 +115,13 @@
         <!-- TITLE -->
         <div class="titleMenu">
           <h1>La note enchantée</h1>
-          <form method="get" class="titleMenuLogo">
-            <button class="buttonHeart">
+          <div class="titleMenuLogo">
+            <div class="buttonHeart">
               <span class="far fa-heart buttonHeartEmpty"> </span>
               <span class="buttonHeartFillBackground"></span>
               <span class="fas fa-heart buttonHeartFill"> </span>
-            </button>
-          </form>
+            </div>
+          </div>
         </div>
 
         <!-- STARTERS -->
@@ -349,9 +349,11 @@
         </div>
 
         <!-- ORDER -->
-        <form method="get" class="formOrder">
-          <button class="formOrderButton buttonTypo">Commander</button>
-        </form>
+        <div class="formOrder">
+          <div class="formOrderButton buttonTypo">
+            <p>Commander</p>
+          </div>
+        </div>
       </section>
     </main>
 

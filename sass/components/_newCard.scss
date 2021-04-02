@@ -1,0 +1,19 @@
+.newCard {
+    padding: 0.5rem 0.8rem;
+    background-color: $colorTertiary;
+    border-radius: 2px;
+
+    @include robotoBold;
+    font-size: 0.8rem;
+    color: darken($colorTertiary, 38);
+
+    @include sizeTablet {
+      font-size: 0.9rem;
+    }
+    @include sizeDesktop {
+      font-size: 1.1rem;
+    }
+    @include size4k {
+      font-size: 1.3rem;
+    }
+}

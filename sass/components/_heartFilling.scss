@@ -1,0 +1,52 @@
+
+// BUTTON FILLING HEART (home page & restaurants pages)
+
+.buttonHeart {
+    @include widthMax;
+    height: 3rem;
+    @include flexRow;
+    @include flexCenterCenter;
+    position: relative;
+    &Empty {
+        z-index: 3;
+        @include widthMax;
+        height: auto;
+        opacity: 1;
+        position: absolute;
+        text-align: center;
+
+        &:hover {
+            opacity: 0;
+            transition: opacity 250ms;
+
+            & + .buttonHeartFillBackground {
+                animation: fillingHeart 700ms 50ms ease-in-out alternate both;
+            }
+        }
+    }
+
+    &Fill {
+        z-index: 1;
+        @include widthMax;
+        height: auto;
+        position: absolute;
+        text-align: center;
+        
+        background:-moz-linear-gradient($colorPrimary, $colorSecondary); 
+        background: -webkit-linear-gradient($colorPrimary, $colorSecondary); 
+        background: linear-gradient($colorPrimary, $colorSecondary);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color:transparent;
+
+        &Background {
+            @include widthMax;
+            @include heightMax;
+            z-index: 2;
+            position: absolute;
+            background-color: $colorWhite;
+        }
+    }
+}
+
+

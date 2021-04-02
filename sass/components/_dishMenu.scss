@@ -1,0 +1,42 @@
+// DISHES MENU
+.dishes {
+    width: $widthMobile;
+    max-width: 450px;
+    @include heightMax;
+    @include flexColumn;
+    @include flexStartCenter;
+    @include gapBoxMedium;
+    margin: 1rem 0;
+    transform-origin: top;
+
+    @include sizeDesktop {
+        margin: 1rem 1rem;
+        height: auto;
+    }
+    @include size4k {
+        margin: 0rem 1rem;
+        height: auto;
+    }
+
+    & h2 {
+        position: relative;
+        right: 43%;
+        width: 15%;
+        border-bottom: 3px solid $colorTertiary; 
+        margin: 0 0 0 0.5rem;
+        padding: 0 0 0.3rem 0;
+        @include roboto;
+        font-size: 1.1rem; 
+        text-transform: uppercase; 
+
+        @include sizeTablet {
+            font-size: 1.2rem; 
+        }
+        @include sizeDesktop {
+            font-size: 1.3rem; 
+        }
+        @include size4k {
+            font-size: 1.4rem; 
+        }
+    }
+}

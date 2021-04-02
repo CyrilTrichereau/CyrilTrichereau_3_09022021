@@ -1,0 +1,32 @@
+
+// BUTTON GREEN CROSS & DISH BOX
+
+.dishBox {
+    position: relative;
+    cursor: pointer;
+
+    &Cross{
+        position: absolute;
+        right: -$widthGreenButton;
+    }
+
+    &:hover {
+
+        & .dishBoxContent {
+            animation: contentMove 600ms ease-in-out alternate forwards;
+            
+            @include sizeNoMobile {
+                animation: contentMoveDesktop 600ms ease-in-out alternate forwards;
+            }
+        }
+
+        & .dishBoxCross {
+            animation: crossMove 600ms ease-in-out alternate forwards;
+            &Background span {
+                animation: rotate 800ms ease-in-out alternate forwards;
+            }
+        }   
+    }
+}
+
+

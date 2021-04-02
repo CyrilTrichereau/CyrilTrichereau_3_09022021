@@ -22,10 +22,6 @@ body {
     min-height: 100%;
 }
 
-.main {
-    position: relative;
-}
-
 .loadingSpinner {
     z-index: -99;
     @include widthMax;

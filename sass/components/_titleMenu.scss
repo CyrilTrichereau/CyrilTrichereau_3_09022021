@@ -1,0 +1,80 @@
+//TITLE MENU
+.titleMenu {
+    width: $widthMobile;
+    max-width: 450px;
+    @include flexRow;
+    @include flexStartCenter;
+    position: relative;
+    overflow: hidden;
+    margin: 0 0 1rem 0;
+    padding: 0;
+    @include gapBoxMedium;
+
+    @include sizeDesktop {
+        @include widthMax;
+        max-width: 1200px;
+        @include gapBoxLarge;
+    }
+    @include size4k {
+        @include widthMax;
+        max-width: unset;
+        @include gapBoxExtraLarge;
+        padding: 1.5rem 0 2rem 0;
+        width: $widthMobile;
+        font-family: $shrikhand;
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    & h1 {
+        width: 85%;
+        @include heightMax;
+        min-height: 3rem;
+        @include flexRow;
+        @include flexCenterCenter;
+        padding: 0 0 0 0.2rem;
+        margin: 0;
+
+        font-size: 1.45rem;
+        font-family: $shrikhand;
+        font-weight: 400;
+        
+
+        @include sizeTablet {
+            font-size: 1.6rem;
+        }
+        @include sizeDesktop {
+            width: auto;
+            margin: 0 1% 0 4%;
+            font-size: 1.8rem;
+        }
+        @include size4k {
+            width: auto;
+            margin: 0 1% 0 4%;
+            font-size: 2rem;
+        }
+    }
+    &Logo {
+        width: 15%;
+        @include heightMax;
+        @include flexRow;
+        @include flexCenterCenter;
+        font-size: 1.8rem;
+        overflow: hidden;
+        border: none;
+        position: relative;
+        right: 0;
+        @include sizeTablet {
+            font-size: 2rem;
+        }
+        @include sizeDesktop {
+            font-size: 2.5rem;
+        }
+        @include size4k {
+            font-size: 3rem;
+        }
+    }
+    & .buttonHeartFillBackground{
+        background-color: lighten($colorBlack, 96.5);
+    }
+}
